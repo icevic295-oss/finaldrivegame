@@ -1,0 +1,6 @@
+.venv/
+data/
+site/data/screen_*.png
+node_modules/
+__pycache__/
+*.pyc

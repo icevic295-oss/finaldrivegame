@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Final Drive — A Daily NFL Two-Minute Drill Game</title>
+<meta name="description" content="Call the plays in a real NFL two-minute drill. One drive a day: manage the clock, out-coach the real sideline, and see how you rank.">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Game","name":"Final Drive","description":"A daily NFL two-minute drill play-calling game built on real play-by-play data.","genre":"Sports game","playMode":"SinglePlayer"}
+</script>
+</head>
+<body>
+<header class="site">
+  <a class="logo" href="index.html">Final<b>Drive</b></a>
+  <nav>
+    <a href="how-to-play.html">How to play</a>
+    <a href="what-is-a-two-minute-drill.html">The tactics</a>
+    <a href="index.html?mode=unlimited">Unlimited</a>
+  </nav>
+</header>
+<main><div id="app">
+  <section class="hero">
+    <p class="eyebrow">A daily NFL two-minute drill game</p>
+    <h1>Can you out-coach the sideline?</h1>
+    <p class="tagline">Every day, one real NFL final drive. You call every play. The clock is not your friend.</p>
+  </section>
+  <div id="loading" class="hint">Loading today's drive…</div>
+</div></main>
+<footer class="site">
+  <p>Built on public nflverse play-by-play data. Not affiliated with the NFL.</p>
+</footer>
+<script type="module">
+  import { runGame } from "./assets/ui.js?v=7";
+  const params = new URLSearchParams(location.search);
+  const mode = params.get("mode") === "unlimited" ? "unlimited" : "daily";
+  const slug = params.get("slug");
+  try {
+    await runGame({ mode, slug });
+    document.getElementById("loading")?.remove();
+  } catch (e) {
+    document.getElementById("loading").textContent = "Could not load the game: " + e.message;
+  }
+</script>
+</body>
+</html>
