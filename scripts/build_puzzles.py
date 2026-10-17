@@ -135,6 +135,18 @@ def main():
         if tot >= 20:
             usage_table[k] = {c: round(n / tot, 3) for c, n in sorted(cats.items(), key=lambda x: -x[1])}
 
+    # pass odds by depth class (completion rate, avg completion yards) in late-game situations
+    passes = pbp[(pbp["play_type"] == "pass") & pbp["pass_length"].isin(["short", "deep"])
+                 & (pbp["game_seconds_remaining"] <= 180) & pbp["wp"].notna()]
+    pass_odds = {}
+    for depth in ("short", "deep"):
+        g2 = passes[passes["pass_length"] == depth]
+        comp = g2["complete_pass"].mean()
+        yards = g2.loc[g2["complete_pass"] == 1, "receiving_yards"].mean()
+        sacks = (g2["sack"] == 1).mean()
+        pass_odds[depth] = {"caught": round(float(comp), 3), "yds": round(float(yards), 1),
+                            "sack": round(float(sacks), 3)}
+
     # FG success rate by 5-yard bucket of kick distance (yardline_100 + 17)
     fgs = pbp[(pbp["play_type"] == "field_goal") & pbp["field_goal_result"].notna()]
     fg_rate = {}
@@ -241,7 +253,7 @@ def main():
 
     (SITE_DATA / "puzzles.json").write_text(json.dumps(puzzles, indent=1), encoding="utf-8")
     (SITE_DATA / "baselines.json").write_text(json.dumps({
-        "wp_delta": dict(baselines), "fg_rate": fg_table, "usage": usage_table,
+        "wp_delta": dict(baselines), "fg_rate": fg_table, "usage": usage_table, "pass_odds": pass_odds,
     }, indent=1), encoding="utf-8")
     print(f"{len(puzzles)} puzzles, {len(baselines)} baseline buckets, {len(fg_table)} fg buckets")
     for p in puzzles[:5]:

@@ -1,6 +1,6 @@
 /* Final Drive — game UI (broadcast-style, competitor-grade call dock) */
-import { Game, dailyPuzzle, shareText, CAT_LABEL, GRADE_ICON, REAL_ICON, ROUTES, ROUTE_NAME, routeDepth } from "./game.js?v=8";
-import { createField } from "./field.js?v=7";
+import { Game, dailyPuzzle, shareText, CAT_LABEL, GRADE_ICON, REAL_ICON, ROUTES, ROUTE_NAME, routeDepth } from "./game.js?v=9";
+import { createField } from "./field.js?v=9";
 
 let PUZZLES, BASELINES, STORIES, PROFILES;
 const $ = (sel) => document.querySelector(sel);
@@ -10,13 +10,19 @@ const FAM = { run: "Run", pass: "Pass" };
 
 async function loadData() {
   const [p, b, s, pl] = await Promise.all([
-    fetch("data/puzzles.json?v=7", { cache: "reload" }).then(r => r.json()),
-    fetch("data/baselines.json?v=7", { cache: "reload" }).then(r => r.json()),
-    fetch("data/stories.json?v=7", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
-    fetch("data/players.json?v=7", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
+    fetch("data/puzzles.json?v=9", { cache: "reload" }).then(r => r.json()),
+    fetch("data/baselines.json?v=9", { cache: "reload" }).then(r => r.json()),
+    fetch("data/stories.json?v=9", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
+    fetch("data/players.json?v=9", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
   ]);
   PUZZLES = p; BASELINES = b; STORIES = s; PROFILES = pl;
 }
+
+function loadStats() {
+  try { return JSON.parse(localStorage.getItem("fd:stats")) || { res: {}, streak: 0, best: 0 }; }
+  catch { return { res: {}, streak: 0, best: 0 }; }
+}
+function saveStats(st) { try { localStorage.setItem("fd:stats", JSON.stringify(st)); } catch {} }
 
 export async function runGame({ mode, slug }) {
   await loadData();
@@ -91,7 +97,8 @@ function updateSituation(puzzle, game) {
     <span class="pill down">${st.down} & ${st.distance}</span>
     <span class="pill">Own ${100 - st.yardline}</span>
     <span class="pill clock">${fmtClock(Math.max(0, st.seconds))}</span>
-    <span class="pill">TO ×${st.timeouts}</span>`;
+    <span class="pill">TO ×${st.timeouts}</span>
+    ${loadStats().streak > 0 ? `<span class="pill streak">🔥 ${loadStats().streak} win streak</span>` : ""}`;
   $("#sb-clock").textContent = fmtClock(Math.max(0, st.seconds));
   $("#sb-pos").textContent = pos;
   $("#sb-def").textContent = def;
@@ -135,7 +142,13 @@ function drawDock(puzzle, game) {
 
   if (ui.step === "family") {
     const fams = familiesAvailable(puzzle, game);
-    let html = `<h2>Your call</h2><div class="famrow">`;
+    let html = `<h2>Your call</h2>
+    <div class="tempo"><span class="lab">Tempo</span><div class="seg" role="radiogroup" aria-label="Tempo">`;
+    for (const [k, label] of [["nohuddle", "No-huddle"], ["huddle", "Huddle"], ["milk", "Milk it"]]) {
+      const secs = k === "milk" ? "about 12 s" : k === "huddle" ? "about 5 s" : "";
+      html += `<button type="button" role="radio" aria-checked="${game.tempo === k}" class="segb ${game.tempo === k ? "on" : ""}" data-tempo="${k}"><b>${label}</b><small>${secs}</small></button>`;
+    }
+    html += `</div></div><div class="famrow">`;
     for (const f of fams) html += `<button class="btn act primary fam ${ui.fam === f ? "open" : ""}" data-fam="${f}">${FAM[f]}</button>`;
     html += `</div>`;
     // sub-options expand right below the family row (accordion)
@@ -168,6 +181,13 @@ function drawDock(puzzle, game) {
     });
     dock.querySelectorAll(".side").forEach(b => b.onclick = () => onCall(puzzle, game, { family: "run", base: "Run", side: b.dataset.side }));
     dock.querySelectorAll(".spec").forEach(b => b.onclick = () => onCall(puzzle, game, { special: b.dataset.spec }));
+    dock.querySelectorAll(".segb").forEach(b => b.onclick = () => {
+      game.tempo = b.dataset.tempo;
+      dock.querySelectorAll(".segb").forEach(x => {
+        const on = x.dataset.tempo === game.tempo;
+        x.classList.toggle("on", on); x.setAttribute("aria-checked", String(on));
+      });
+    });
     return;
   }
 
@@ -189,10 +209,12 @@ function drawDock(puzzle, game) {
 
 function drawPassPainter(puzzle, game) {
   const ui = game._ui;
+  const odds = BASELINES.pass_odds || {};
   let html = `<h2>Pass — set your routes</h2><div class="rcvrow">`;
   for (const slot of Object.keys(ROUTES)) {
     const rt = ui.pass.routes[slot];
-    html += `<button class="btn act gold rcv" data-slot="${slot}">${slot}<small>${ROUTE_NAME[rt]}</small></button>`;
+    const o = odds[routeDepth(rt)];
+    html += `<button class="btn act gold rcv" data-slot="${slot}">${slot}<small>${ROUTE_NAME[rt]}${o ? `<br>${Math.round(o.caught * 100)}% · ${o.yds} yds` : ""}</small></button>`;
   }
   html += `</div>
   <div class="prow"><div class="lab">Target</div><div class="sides" id="targets">
@@ -353,6 +375,13 @@ const fmtExp = (x) => `${x >= 0 ? "+" : ""}${(x * 100).toFixed(1)}pp`;
 
 function renderEnd(puzzle, game) {
   $("#dock").innerHTML = "";
+  const stt = loadStats();
+  stt.res[puzzle.slug] = game.won ? "W" : "L";
+  const slugs = Object.keys(stt.res);
+  stt.streak = 0;
+  for (let i = slugs.length - 1; i >= 0; i--) { if (stt.res[slugs[i]] === "W") stt.streak++; else break; }
+  stt.best = Math.max(stt.best || 0, stt.streak);
+  saveStats(stt);
   const style = game.coachStyle();
   const grades = game.log.filter(l => !l.neutral).map(l => GRADE_ICON[Game.gradeIndex(l.grade)]).join("");
   const g = puzzle.game;
@@ -369,6 +398,7 @@ function renderEnd(puzzle, game) {
       <div><span class="k">Calls graded</span><span class="v">${grades || "—"}</span></div>
       <div><span class="k">You</span><span class="v">${game.won ? "WIN" : "LOSS"}</span></div>
       <div><span class="k">Real coach</span><span class="v">${realRow}</span></div>
+      <div><span class="k">Streak</span><span class="v">🔥 ${stt.streak} (best ${stt.best})</span></div>
     </div>
     <div class="style">
       <h3>Your style: ${style.name}</h3>
@@ -376,6 +406,7 @@ function renderEnd(puzzle, game) {
     </div>
     <div class="end-acts">
       <button id="share" class="btn primary">📋 Copy share card</button>
+      <button id="tweet" class="btn gold">𝕏 Post it</button>
       <button id="another" class="btn">🔁 Play another drive</button>
     </div>
     <p class="hint">Compare with the real drive below — every real call, in order.</p>
@@ -390,6 +421,9 @@ function renderEnd(puzzle, game) {
       </div>`).join("")}
     <p class="hint">Real result: <b>${puzzle.result}</b></p>
   </section>`;
+  $("#tweet").onclick = () => {
+    window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(share), "_blank", "width=560,height=640");
+  };
   $("#share").onclick = async () => {
     try { await navigator.clipboard.writeText(share); $("#share").textContent = "✅ Copied — go paste it"; }
     catch { prompt("Copy your result:", share); }

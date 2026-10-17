@@ -200,3 +200,16 @@ footer.site a { color: var(--muted); }
 .field-svg.playing { cursor: pointer; }
 .field-svg.playing .recv { pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .subpanel, .sb-wpbar i, #ball { transition: none !important; } }
+
+/* tempo segmented control */
+.tempo { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.tempo .lab { font-family: var(--disp); font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; }
+.tempo .seg { display: flex; gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; flex: 1; }
+.segb { flex: 1; background: var(--bg2); color: var(--fg); border: none; border-right: 1px solid var(--line); padding: 8px 4px; cursor: pointer; font-family: var(--disp); }
+.segb:last-child { border-right: none; }
+.segb b { display: block; font-size: 15px; font-weight: 700; letter-spacing: .5px; }
+.segb small { display: block; font-size: 11px; color: var(--muted); }
+.segb.on { background: var(--gold); color: #171204; }
+.segb.on small { color: #171204; }
+.pill.streak { background: #2a1f08; border-color: #4a3c14; color: var(--gold); }
+.rcv small { line-height: 1.3; }

@@ -36,6 +36,7 @@ export class Game {
     this.wp = puzzle.plays[0]?.wp_before ?? puzzle.plays[0]?.wp ?? 0.2;
     this.startWp = this.wp;
     this.idx = 0;
+    this.tempo = "nohuddle";   // nohuddle 0s | huddle 5s | milk 12s before the snap
     this.log = [];
     this.over = false;
     this.pendingTry = null;
@@ -122,6 +123,10 @@ export class Game {
     });
     this.endDrive();
     return this.log[this.log.length - 1];
+  }
+
+  tempoCost() {
+    return this.tempo === "milk" ? 12 : this.tempo === "huddle" ? 5 : 0;
   }
 
   choose(call) {

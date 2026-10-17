@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Final Drive — A Daily NFL Two-Minute Drill Game</title>
 <meta name="description" content="Call the plays in a real NFL two-minute drill. One drive a day: manage the clock, out-coach the real sideline, and see how you rank.">
+<meta property="og:title" content="Final Drive — A Daily NFL Two-Minute Drill Game">
+<meta property="og:description" content="Call the plays in a real NFL two-minute drill. One drive a day: out-coach the real sideline.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://finaldrivegame.com/">
+<meta property="og:image" content="https://finaldrivegame.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Game","name":"Final Drive","description":"A daily NFL two-minute drill play-calling game built on real play-by-play data.","genre":"Sports game","playMode":"SinglePlayer"}
@@ -31,7 +37,7 @@
   <p>Built on public nflverse play-by-play data. Not affiliated with the NFL.</p>
 </footer>
 <script type="module">
-  import { runGame } from "./assets/ui.js?v=7";
+  import { runGame } from "./assets/ui.js?v=9";
   const params = new URLSearchParams(location.search);
   const mode = params.get("mode") === "unlimited" ? "unlimited" : "daily";
   const slug = params.get("slug");
