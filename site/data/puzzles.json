@@ -1,0 +1,4818 @@
+[
+ {
+  "slug": "2026-w1-no-det-113",
+  "game": {
+   "season": 2026,
+   "week": 1,
+   "date": "2026-09-13",
+   "home": "DET",
+   "away": "NO",
+   "posteam": "NO",
+   "defteam": "DET"
+  },
+  "start": {
+   "qtr": 5,
+   "seconds": 113,
+   "down": 1,
+   "distance": 10,
+   "yardline": 35,
+   "score_diff": -7,
+   "posteam_score": 24,
+   "defteam_score": 31,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:53) (Shotgun) 6-T.Shough pass deep right to 83-J.Johnson pushed ob at DET 8 for 27 yards (12-T.Harper).",
+    "qtr": 5,
+    "seconds": 113,
+    "down": 1,
+    "distance": 10,
+    "yardline": 35,
+    "score_diff": -7,
+    "wp": 0.682,
+    "wp_before": 0.579,
+    "clock_before": 113,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:45) 6-T.Shough pass incomplete short right to 83-J.Johnson (55-D.Barnes).",
+    "qtr": 5,
+    "seconds": 105,
+    "down": 1,
+    "distance": 8,
+    "yardline": 8,
+    "score_diff": -7,
+    "wp": 0.898,
+    "wp_before": 0.682,
+    "clock_before": 105,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:38) (Shotgun) 6-T.Shough pass short right to 87-N.Fant for 8 yards, TOUCHDOWN.",
+    "qtr": 5,
+    "seconds": 98,
+    "down": 2,
+    "distance": 8,
+    "yardline": 8,
+    "score_diff": -1,
+    "wp": 0.873,
+    "wp_before": 0.898,
+    "clock_before": 98,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    },
+    "try": {
+     "type": "xp",
+     "good": false
+    }
+   }
+  ],
+  "result": "Touchdown",
+  "final_wp": 0.873,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2023-w11-min-den-63",
+  "game": {
+   "season": 2023,
+   "week": 11,
+   "date": "2023-11-19",
+   "home": "DEN",
+   "away": "MIN",
+   "posteam": "MIN",
+   "defteam": "DEN"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 63,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -1,
+   "posteam_score": 20,
+   "defteam_score": 21,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:03) (Shotgun) 15-J.Dobbs pass incomplete short right to 87-T.Hockenson (31-J.Simmons).",
+    "qtr": 4,
+    "seconds": 63,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.444,
+    "wp_before": 0.444,
+    "clock_before": 63,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:58) (Shotgun) 15-J.Dobbs pass short left to 3-J.Addison ran ob at MIN 34 for 9 yards.",
+    "qtr": 4,
+    "seconds": 58,
+    "down": 2,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.405,
+    "wp_before": 0.444,
+    "clock_before": 58,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:54) (Shotgun) 15-J.Dobbs sacked at MIN 34 for 0 yards (56-B.Browning).",
+    "qtr": 4,
+    "seconds": 54,
+    "down": 3,
+    "distance": 1,
+    "yardline": 66,
+    "score_diff": -1,
+    "wp": 0.404,
+    "wp_before": 0.405,
+    "clock_before": 54,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:43) 15-J.Dobbs up the middle to MIN 36 for 2 yards (49-A.Singleton).",
+    "qtr": 4,
+    "seconds": 43,
+    "down": 4,
+    "distance": 1,
+    "yardline": 66,
+    "score_diff": -1,
+    "wp": 0.334,
+    "wp_before": 0.334,
+    "clock_before": 43,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:41) (Shotgun) 15-J.Dobbs pass incomplete short right to 87-T.Hockenson (31-J.Simmons).",
+    "qtr": 4,
+    "seconds": 41,
+    "down": 1,
+    "distance": 10,
+    "yardline": 64,
+    "score_diff": -1,
+    "wp": 0.416,
+    "wp_before": 0.416,
+    "clock_before": 41,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:36) (Shotgun) 15-J.Dobbs pass incomplete short right [99-Z.Allen].",
+    "qtr": 4,
+    "seconds": 36,
+    "down": 2,
+    "distance": 10,
+    "yardline": 64,
+    "score_diff": -1,
+    "wp": 0.377,
+    "wp_before": 0.416,
+    "clock_before": 36,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:28) (Shotgun) 15-J.Dobbs pass incomplete short right [93-D.Jones]. PENALTY on MIN-15-J.Dobbs, Intentional Grounding, 15 yards, enforced at MIN 36.",
+    "qtr": 4,
+    "seconds": 28,
+    "down": 3,
+    "distance": 10,
+    "yardline": 64,
+    "score_diff": -1,
+    "wp": 0.256,
+    "wp_before": 0.377,
+    "clock_before": 28,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:23) (Shotgun) 15-J.Dobbs pass incomplete deep middle to 17-K.Osborn.",
+    "qtr": 4,
+    "seconds": 23,
+    "down": 4,
+    "distance": 25,
+    "yardline": 79,
+    "score_diff": -1,
+    "wp": 0.172,
+    "wp_before": 0.172,
+    "clock_before": 23,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.172,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2025-w1-pit-nyj-120",
+  "game": {
+   "season": 2025,
+   "week": 1,
+   "date": "2025-09-07",
+   "home": "NYJ",
+   "away": "PIT",
+   "posteam": "PIT",
+   "defteam": "NYJ"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 9,
+   "yardline": 40,
+   "score_diff": -1,
+   "posteam_score": 31,
+   "defteam_score": 32,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 8-A.Rodgers pass short right to 81-J.Smith to NYJ 42 for -2 yards (95-Q.Williams).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 9,
+    "yardline": 40,
+    "score_diff": -1,
+    "wp": 0.581,
+    "wp_before": 0.605,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:12) (Shotgun) 8-A.Rodgers pass incomplete deep left to 19-C.Austin (21-B.Stephens).",
+    "qtr": 4,
+    "seconds": 72,
+    "down": 3,
+    "distance": 11,
+    "yardline": 42,
+    "score_diff": -1,
+    "wp": 0.419,
+    "wp_before": 0.419,
+    "clock_before": 72,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(1:08) 9-C.Boswell 60 yard field goal is GOOD, Center-46-C.Kuntz, Holder-3-C.Waitman.",
+    "qtr": 4,
+    "seconds": 68,
+    "down": 4,
+    "distance": 11,
+    "yardline": 42,
+    "score_diff": 2,
+    "wp": 0.353,
+    "wp_before": 0.419,
+    "clock_before": 68
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.353,
+  "real_final_score_diff": 2
+ },
+ {
+  "slug": "2024-w18-pit-cin-111",
+  "game": {
+   "season": 2024,
+   "week": 18,
+   "date": "2025-01-04",
+   "home": "PIT",
+   "away": "CIN",
+   "posteam": "PIT",
+   "defteam": "CIN"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 111,
+   "down": 1,
+   "distance": 10,
+   "yardline": 76,
+   "score_diff": -2,
+   "posteam_score": 17,
+   "defteam_score": 19,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:51) (Shotgun) 3-R.Wilson pass short right to 22-N.Harris to PIT 22 for -2 yards (59-A.Davis-Gaither) [99-M.Murphy]. ** Injury Update: PIT-22-N.Harris has returned to the game.",
+    "qtr": 4,
+    "seconds": 111,
+    "down": 1,
+    "distance": 10,
+    "yardline": 76,
+    "score_diff": -2,
+    "wp": 0.419,
+    "wp_before": 0.771,
+    "clock_before": 111,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:29) (No Huddle, Shotgun) 3-R.Wilson pass short left to 88-P.Freiermuth to PIT 25 for 3 yards (21-M.Hilton).",
+    "qtr": 4,
+    "seconds": 89,
+    "down": 2,
+    "distance": 12,
+    "yardline": 78,
+    "score_diff": -2,
+    "wp": 0.365,
+    "wp_before": 0.419,
+    "clock_before": 89,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:08) (No Huddle, Shotgun) 3-R.Wilson pass short middle to 88-P.Freiermuth to PIT 42 for 17 yards (59-A.Davis-Gaither).",
+    "qtr": 4,
+    "seconds": 68,
+    "down": 3,
+    "distance": 9,
+    "yardline": 75,
+    "score_diff": -2,
+    "wp": 0.326,
+    "wp_before": 0.365,
+    "clock_before": 68,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:46) (No Huddle, Shotgun) 3-R.Wilson scrambles right end to PIT 45 for 3 yards (21-M.Hilton).",
+    "qtr": 4,
+    "seconds": 46,
+    "down": 1,
+    "distance": 10,
+    "yardline": 58,
+    "score_diff": -2,
+    "wp": 0.402,
+    "wp_before": 0.326,
+    "clock_before": 46,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "weak"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:24) (No Huddle, Shotgun) 3-R.Wilson sacked at PIT 40 for -5 yards (91-T.Hendrickson).",
+    "qtr": 4,
+    "seconds": 24,
+    "down": 2,
+    "distance": 7,
+    "yardline": 55,
+    "score_diff": -2,
+    "wp": 0.399,
+    "wp_before": 0.402,
+    "clock_before": 24,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:20) (Shotgun) 3-R.Wilson pass incomplete deep right to 14-G.Pickens [52-C.Johnson].",
+    "qtr": 4,
+    "seconds": 20,
+    "down": 3,
+    "distance": 12,
+    "yardline": 60,
+    "score_diff": -2,
+    "wp": 0.207,
+    "wp_before": 0.207,
+    "clock_before": 20,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:15) (Shotgun) 3-R.Wilson pass incomplete short right to 88-P.Freiermuth.",
+    "qtr": 4,
+    "seconds": 15,
+    "down": 4,
+    "distance": 12,
+    "yardline": 60,
+    "score_diff": -2,
+    "wp": 0.191,
+    "wp_before": 0.191,
+    "clock_before": 15,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.191,
+  "real_final_score_diff": -2
+ },
+ {
+  "slug": "2025-w15-kc-lac-113",
+  "game": {
+   "season": 2025,
+   "week": 15,
+   "date": "2025-12-14",
+   "home": "KC",
+   "away": "LAC",
+   "posteam": "KC",
+   "defteam": "LAC"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 113,
+   "down": 1,
+   "distance": 20,
+   "yardline": 56,
+   "score_diff": -3,
+   "posteam_score": 13,
+   "defteam_score": 16,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:53) (Shotgun) 17-G.Minshew pass short right to 87-T.Kelce to LAC 45 for 11 yards (0-D.Henley; 20-C.Hart).",
+    "qtr": 4,
+    "seconds": 113,
+    "down": 1,
+    "distance": 20,
+    "yardline": 56,
+    "score_diff": -3,
+    "wp": 0.395,
+    "wp_before": 0.395,
+    "clock_before": 113,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:18) (Shotgun) 17-G.Minshew pass short left to 4-R.Rice to LAC 42 for 3 yards (31-M.Williams).",
+    "qtr": 4,
+    "seconds": 78,
+    "down": 2,
+    "distance": 9,
+    "yardline": 45,
+    "score_diff": -3,
+    "wp": 0.404,
+    "wp_before": 0.395,
+    "clock_before": 78,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:37) (Shotgun) 17-G.Minshew pass short left to 87-T.Kelce to LAC 34 for 8 yards (31-M.Williams).",
+    "qtr": 4,
+    "seconds": 37,
+    "down": 3,
+    "distance": 6,
+    "yardline": 42,
+    "score_diff": -3,
+    "wp": 0.379,
+    "wp_before": 0.404,
+    "clock_before": 37,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:27) (Shotgun) 17-G.Minshew pass incomplete short right.",
+    "qtr": 4,
+    "seconds": 27,
+    "down": 1,
+    "distance": 10,
+    "yardline": 34,
+    "score_diff": -3,
+    "wp": 0.407,
+    "wp_before": 0.407,
+    "clock_before": 27,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:20) (Shotgun) 17-G.Minshew pass deep left intended for 87-T.Kelce INTERCEPTED by 3-D.James at LAC 18. 3-D.James to LAC 18 for no gain (87-T.Kelce).",
+    "qtr": 4,
+    "seconds": 20,
+    "down": 2,
+    "distance": 15,
+    "yardline": 39,
+    "score_diff": -3,
+    "wp": 0.265,
+    "wp_before": 0.322,
+    "clock_before": 20,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover",
+  "final_wp": 0.265,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2024-w4-pit-ind-120",
+  "game": {
+   "season": 2024,
+   "week": 4,
+   "date": "2024-09-29",
+   "home": "IND",
+   "away": "PIT",
+   "posteam": "PIT",
+   "defteam": "IND"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 1,
+   "yardline": 62,
+   "score_diff": -3,
+   "posteam_score": 24,
+   "defteam_score": 27,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "run",
+    "desc": "(2:00) (Shotgun) 22-N.Harris up the middle to PIT 42 for 4 yards (45-E.Speed).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 1,
+    "yardline": 62,
+    "score_diff": -3,
+    "wp": 0.32,
+    "wp_before": 0.302,
+    "clock_before": 120,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:43) (No Huddle, Shotgun) 2-J.Fields FUMBLES (Aborted) at PIT 36, and recovers at PIT 30. 2-J.Fields to PIT 30 for no gain (45-E.Speed).",
+    "qtr": 4,
+    "seconds": 103,
+    "down": 1,
+    "distance": 10,
+    "yardline": 58,
+    "score_diff": -3,
+    "wp": 0.303,
+    "wp_before": 0.32,
+    "clock_before": 103,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:14) (No Huddle, Shotgun) 2-J.Fields pass incomplete deep left to 14-G.Pickens (40-J.Jones).",
+    "qtr": 4,
+    "seconds": 74,
+    "down": 2,
+    "distance": 22,
+    "yardline": 70,
+    "score_diff": -3,
+    "wp": 0.237,
+    "wp_before": 0.303,
+    "clock_before": 74,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:07) (No Huddle, Shotgun) 2-J.Fields pass short left to 22-N.Harris to PIT 41 for 11 yards (45-E.Speed).",
+    "qtr": 4,
+    "seconds": 67,
+    "down": 3,
+    "distance": 22,
+    "yardline": 70,
+    "score_diff": -3,
+    "wp": 0.212,
+    "wp_before": 0.237,
+    "clock_before": 67,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:37) (No Huddle, Shotgun) 2-J.Fields pass incomplete deep right to 11-V.Jefferson [95-A.Adebawore].",
+    "qtr": 4,
+    "seconds": 37,
+    "down": 4,
+    "distance": 11,
+    "yardline": 59,
+    "score_diff": -3,
+    "wp": 0.119,
+    "wp_before": 0.212,
+    "clock_before": 37,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.119,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2024-w13-nyj-sea-120",
+  "game": {
+   "season": 2024,
+   "week": 13,
+   "date": "2024-12-01",
+   "home": "NYJ",
+   "away": "SEA",
+   "posteam": "NYJ",
+   "defteam": "SEA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 1,
+   "distance": 10,
+   "yardline": 29,
+   "score_diff": -5,
+   "posteam_score": 21,
+   "defteam_score": 26,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 8-A.Rodgers pass incomplete short middle to 17-D.Adams.",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 1,
+    "distance": 10,
+    "yardline": 29,
+    "score_diff": -5,
+    "wp": 0.372,
+    "wp_before": 0.309,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:57) (Shotgun) 8-A.Rodgers pass short middle to 32-I.Davis to SEA 29 for no gain (20-J.Love).",
+    "qtr": 4,
+    "seconds": 117,
+    "down": 2,
+    "distance": 10,
+    "yardline": 29,
+    "score_diff": -5,
+    "wp": 0.347,
+    "wp_before": 0.372,
+    "clock_before": 117,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:22) (Shotgun) 8-A.Rodgers sacked at SEA 34 for -5 yards (99-L.Williams).",
+    "qtr": 4,
+    "seconds": 82,
+    "down": 3,
+    "distance": 10,
+    "yardline": 29,
+    "score_diff": -5,
+    "wp": 0.3,
+    "wp_before": 0.347,
+    "clock_before": 82,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:38) (No Huddle, Shotgun) 8-A.Rodgers pass incomplete deep left to 5-G.Wilson [8-C.Bryant].",
+    "qtr": 4,
+    "seconds": 38,
+    "down": 4,
+    "distance": 15,
+    "yardline": 34,
+    "score_diff": -5,
+    "wp": 0.178,
+    "wp_before": 0.3,
+    "clock_before": 38,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.178,
+  "real_final_score_diff": -5
+ },
+ {
+  "slug": "2023-w10-cin-hou-113",
+  "game": {
+   "season": 2023,
+   "week": 10,
+   "date": "2023-11-12",
+   "home": "CIN",
+   "away": "HOU",
+   "posteam": "CIN",
+   "defteam": "HOU"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 113,
+   "down": 1,
+   "distance": 7,
+   "yardline": 7,
+   "score_diff": -3,
+   "posteam_score": 24,
+   "defteam_score": 27,
+   "timeouts": 0
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:53) (Shotgun) 9-J.Burrow sacked at HOU 14 for -7 yards (98-S.Rankins).",
+    "qtr": 4,
+    "seconds": 113,
+    "down": 1,
+    "distance": 7,
+    "yardline": 7,
+    "score_diff": -3,
+    "wp": 0.614,
+    "wp_before": 0.289,
+    "clock_before": 113,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:46) (Shotgun) 9-J.Burrow up the middle to HOU 13 for 1 yard (96-M.Collins).",
+    "qtr": 4,
+    "seconds": 106,
+    "down": 2,
+    "distance": 14,
+    "yardline": 14,
+    "score_diff": -3,
+    "wp": 0.53,
+    "wp_before": 0.53,
+    "clock_before": 106,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:42) (Shotgun) 9-J.Burrow pass incomplete short middle to 83-T.Boyd.",
+    "qtr": 4,
+    "seconds": 102,
+    "down": 3,
+    "distance": 13,
+    "yardline": 13,
+    "score_diff": -3,
+    "wp": 0.485,
+    "wp_before": 0.485,
+    "clock_before": 102,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(1:37) 2-E.McPherson 31 yard field goal is GOOD, Center-48-C.Adomitis, Holder-10-B.Robbins.",
+    "qtr": 4,
+    "seconds": 97,
+    "down": 4,
+    "distance": 13,
+    "yardline": 13,
+    "score_diff": 0,
+    "wp": 0.421,
+    "wp_before": 0.485,
+    "clock_before": 97
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.421,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2026-w4-phi-la-65",
+  "game": {
+   "season": 2026,
+   "week": 4,
+   "date": "2026-10-04",
+   "home": "PHI",
+   "away": "LA",
+   "posteam": "PHI",
+   "defteam": "LA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 65,
+   "down": 1,
+   "distance": 10,
+   "yardline": 73,
+   "score_diff": -4,
+   "posteam_score": 20,
+   "defteam_score": 24,
+   "timeouts": 0
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:05) (Shotgun) 1-J.Hurts sacked at PHI 20 for -7 yards (0-B.Young).",
+    "qtr": 4,
+    "seconds": 65,
+    "down": 1,
+    "distance": 10,
+    "yardline": 73,
+    "score_diff": -4,
+    "wp": 0.223,
+    "wp_before": 0.223,
+    "clock_before": 65,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:42) (No Huddle, Shotgun) 1-J.Hurts pass incomplete short middle to 80-D.Cooper.",
+    "qtr": 4,
+    "seconds": 42,
+    "down": 2,
+    "distance": 17,
+    "yardline": 80,
+    "score_diff": -4,
+    "wp": 0.104,
+    "wp_before": 0.223,
+    "clock_before": 42,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:38) (Shotgun) 1-J.Hurts sacked at PHI 12 for -8 yards (0-B.Young). FUMBLES (0-B.Young) [0-B.Young], recovered by PHI-72-M.Bell at PHI 12.",
+    "qtr": 4,
+    "seconds": 38,
+    "down": 3,
+    "distance": 17,
+    "yardline": 80,
+    "score_diff": -4,
+    "wp": 0.096,
+    "wp_before": 0.104,
+    "clock_before": 38,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:15) (No Huddle, Shotgun) 1-J.Hurts pass incomplete deep left to 80-D.Cooper.",
+    "qtr": 4,
+    "seconds": 15,
+    "down": 4,
+    "distance": 25,
+    "yardline": 88,
+    "score_diff": -4,
+    "wp": 0.03,
+    "wp_before": 0.096,
+    "clock_before": 15,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.03,
+  "real_final_score_diff": -4
+ },
+ {
+  "slug": "2024-w13-ari-min-73",
+  "game": {
+   "season": 2024,
+   "week": 13,
+   "date": "2024-12-01",
+   "home": "MIN",
+   "away": "ARI",
+   "posteam": "ARI",
+   "defteam": "MIN"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 73,
+   "down": 1,
+   "distance": 10,
+   "yardline": 70,
+   "score_diff": -1,
+   "posteam_score": 22,
+   "defteam_score": 23,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:13) (Shotgun) 1-K.Murray pass short middle to 14-Mi.Wilson to ARI 35 for 5 yards (22-H.Smith).",
+    "qtr": 4,
+    "seconds": 73,
+    "down": 1,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": -1,
+    "wp": 0.45,
+    "wp_before": 0.444,
+    "clock_before": 73,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:53) (No Huddle, Shotgun) 1-K.Murray sacked at ARI 27 for -8 yards (58-J.Greenard). FUMBLES (58-J.Greenard), and recovers at ARI 27.",
+    "qtr": 4,
+    "seconds": 53,
+    "down": 2,
+    "distance": 5,
+    "yardline": 65,
+    "score_diff": -1,
+    "wp": 0.44,
+    "wp_before": 0.45,
+    "clock_before": 53,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:48) (Shotgun) 1-K.Murray scrambles right end to ARI 30 for 3 yards (58-J.Greenard).",
+    "qtr": 4,
+    "seconds": 48,
+    "down": 3,
+    "distance": 13,
+    "yardline": 73,
+    "score_diff": -1,
+    "wp": 0.31,
+    "wp_before": 0.31,
+    "clock_before": 48,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "weak"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:40) (Shotgun) 1-K.Murray pass deep right intended for 18-M.Harrison INTERCEPTED by 1-S.Griffin [52-Ji.Ward] at MIN 45. 1-S.Griffin to MIN 45 for no gain (18-M.Harrison).",
+    "qtr": 4,
+    "seconds": 40,
+    "down": 4,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": -1,
+    "wp": 0.252,
+    "wp_before": 0.252,
+    "clock_before": 40,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover",
+  "final_wp": 0.252,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2024-w10-was-pit-120",
+  "game": {
+   "season": 2024,
+   "week": 10,
+   "date": "2024-11-10",
+   "home": "WAS",
+   "away": "PIT",
+   "posteam": "WAS",
+   "defteam": "PIT"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 1,
+   "distance": 10,
+   "yardline": 51,
+   "score_diff": -1,
+   "posteam_score": 27,
+   "defteam_score": 28,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "run",
+    "desc": "(2:00) (Shotgun) 5-J.Daniels up the middle to 50 for 1 yard (95-K.Benton).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 1,
+    "distance": 10,
+    "yardline": 51,
+    "score_diff": -1,
+    "wp": 0.594,
+    "wp_before": 0.516,
+    "clock_before": 120,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:39) (No Huddle, Shotgun) 5-J.Daniels pass incomplete short right to 85-N.Brown (90-T.Watt) [90-T.Watt].",
+    "qtr": 4,
+    "seconds": 99,
+    "down": 2,
+    "distance": 9,
+    "yardline": 50,
+    "score_diff": -1,
+    "wp": 0.565,
+    "wp_before": 0.594,
+    "clock_before": 99,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:34) (Shotgun) 5-J.Daniels pass incomplete deep right to 85-N.Brown (42-J.Pierre).",
+    "qtr": 4,
+    "seconds": 94,
+    "down": 3,
+    "distance": 9,
+    "yardline": 50,
+    "score_diff": -1,
+    "wp": 0.467,
+    "wp_before": 0.565,
+    "clock_before": 94,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:28) (Shotgun) 5-J.Daniels pass short middle to 86-Z.Ertz to PIT 42 for 8 yards (23-D.Kazee). The Replay Official reviewed the short of the line to gain ruling, and the play was Upheld. The ruling on the field stands.",
+    "qtr": 4,
+    "seconds": 88,
+    "down": 4,
+    "distance": 9,
+    "yardline": 50,
+    "score_diff": -1,
+    "wp": 0.401,
+    "wp_before": 0.467,
+    "clock_before": 88,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.401,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2025-w5-mia-car-114",
+  "game": {
+   "season": 2025,
+   "week": 5,
+   "date": "2025-10-05",
+   "home": "CAR",
+   "away": "MIA",
+   "posteam": "MIA",
+   "defteam": "CAR"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 114,
+   "down": 1,
+   "distance": 10,
+   "yardline": 78,
+   "score_diff": -3,
+   "posteam_score": 24,
+   "defteam_score": 27,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:54) (Shotgun) 1-T.Tagovailoa pass incomplete short left to 17-J.Waddle (31-C.Thornton).",
+    "qtr": 4,
+    "seconds": 114,
+    "down": 1,
+    "distance": 10,
+    "yardline": 78,
+    "score_diff": -3,
+    "wp": 0.286,
+    "wp_before": 0.288,
+    "clock_before": 114,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:51) (Shotgun) 1-T.Tagovailoa pass incomplete deep right to 17-J.Waddle.",
+    "qtr": 4,
+    "seconds": 111,
+    "down": 2,
+    "distance": 10,
+    "yardline": 78,
+    "score_diff": -3,
+    "wp": 0.241,
+    "wp_before": 0.286,
+    "clock_before": 111,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:46) (Shotgun) 1-T.Tagovailoa sacked at MIA 15 for -7 yards (91-P.Jones).",
+    "qtr": 4,
+    "seconds": 106,
+    "down": 3,
+    "distance": 10,
+    "yardline": 78,
+    "score_diff": -3,
+    "wp": 0.216,
+    "wp_before": 0.241,
+    "clock_before": 106,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "punt",
+    "desc": "(1:10) 16-J.Bailey punts 58 yards to CAR 27, Center-49-J.Cardona, fair catch by 20-D.Dallas.",
+    "qtr": 4,
+    "seconds": 70,
+    "down": 4,
+    "distance": 17,
+    "yardline": 85,
+    "score_diff": -3,
+    "wp": 0.098,
+    "wp_before": 0.216,
+    "clock_before": 70
+   }
+  ],
+  "result": "Punt",
+  "final_wp": 0.098,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2024-w17-chi-sea-125",
+  "game": {
+   "season": 2024,
+   "week": 17,
+   "date": "2024-12-26",
+   "home": "CHI",
+   "away": "SEA",
+   "posteam": "CHI",
+   "defteam": "SEA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 125,
+   "down": 1,
+   "distance": 10,
+   "yardline": 51,
+   "score_diff": -3,
+   "posteam_score": 3,
+   "defteam_score": 6,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:05) (Shotgun) 18-C.Williams to CHI 43 for -6 yards. FUMBLES, and recovers at CHI 42. 18-C.Williams sacked at CHI 44 for -5 yards (99-L.Williams).",
+    "qtr": 4,
+    "seconds": 125,
+    "down": 1,
+    "distance": 10,
+    "yardline": 51,
+    "score_diff": -3,
+    "wp": 0.44,
+    "wp_before": 0.276,
+    "clock_before": 125,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 18-C.Williams pass short left to 2-D.Moore to CHI 45 for 1 yard (10-U.Nwosu; 48-T.Knight).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 15,
+    "yardline": 56,
+    "score_diff": -3,
+    "wp": 0.362,
+    "wp_before": 0.44,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:15) (Shotgun) 18-C.Williams pass short right to 15-R.Odunze to SEA 40 for 15 yards (8-C.Bryant) [53-B.Mafe].",
+    "qtr": 4,
+    "seconds": 75,
+    "down": 3,
+    "distance": 14,
+    "yardline": 55,
+    "score_diff": -3,
+    "wp": 0.284,
+    "wp_before": 0.362,
+    "clock_before": 75,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:37) (No Huddle, Shotgun) 18-C.Williams pass incomplete short right.",
+    "qtr": 4,
+    "seconds": 37,
+    "down": 1,
+    "distance": 10,
+    "yardline": 40,
+    "score_diff": -3,
+    "wp": 0.459,
+    "wp_before": 0.284,
+    "clock_before": 37,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:31) (Shotgun) 18-C.Williams pass incomplete deep right to 15-R.Odunze.",
+    "qtr": 4,
+    "seconds": 31,
+    "down": 2,
+    "distance": 10,
+    "yardline": 40,
+    "score_diff": -3,
+    "wp": 0.416,
+    "wp_before": 0.416,
+    "clock_before": 31,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:26) (Shotgun) 18-C.Williams pass incomplete deep right to 2-D.Moore.",
+    "qtr": 4,
+    "seconds": 26,
+    "down": 3,
+    "distance": 10,
+    "yardline": 40,
+    "score_diff": -3,
+    "wp": 0.28,
+    "wp_before": 0.416,
+    "clock_before": 26,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:20) (Shotgun) 18-C.Williams pass deep right intended for 2-D.Moore INTERCEPTED by 27-T.Woolen (8-C.Bryant) [8-C.Bryant] at SEA 22. 27-T.Woolen pushed ob at SEA 29 for 7 yards (85-C.Kmet).",
+    "qtr": 4,
+    "seconds": 20,
+    "down": 4,
+    "distance": 10,
+    "yardline": 40,
+    "score_diff": -3,
+    "wp": 0.175,
+    "wp_before": 0.175,
+    "clock_before": 20,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover",
+  "final_wp": 0.175,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2024-w4-nyj-den-123",
+  "game": {
+   "season": 2024,
+   "week": 4,
+   "date": "2024-09-29",
+   "home": "NYJ",
+   "away": "DEN",
+   "posteam": "NYJ",
+   "defteam": "DEN"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 123,
+   "down": 2,
+   "distance": 2,
+   "yardline": 59,
+   "score_diff": -1,
+   "posteam_score": 9,
+   "defteam_score": 10,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:03) (No Huddle, Shotgun) 8-A.Rodgers pass short middle to 83-T.Conklin to NYJ 45 for 4 yards (6-P.Locke).",
+    "qtr": 4,
+    "seconds": 123,
+    "down": 2,
+    "distance": 2,
+    "yardline": 59,
+    "score_diff": -1,
+    "wp": 0.565,
+    "wp_before": 0.546,
+    "clock_before": 123,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 8-A.Rodgers pass incomplete short right to 5-G.Wilson (2-P.Surtain) [97-M.Roach].",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 1,
+    "distance": 10,
+    "yardline": 55,
+    "score_diff": -1,
+    "wp": 0.59,
+    "wp_before": 0.565,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:57) (Shotgun) 8-A.Rodgers pass incomplete deep middle to 5-G.Wilson.",
+    "qtr": 4,
+    "seconds": 117,
+    "down": 2,
+    "distance": 10,
+    "yardline": 55,
+    "score_diff": -1,
+    "wp": 0.561,
+    "wp_before": 0.59,
+    "clock_before": 117,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:53) (Shotgun) 8-A.Rodgers pass incomplete short left to 82-X.Gipson.",
+    "qtr": 4,
+    "seconds": 113,
+    "down": 3,
+    "distance": 10,
+    "yardline": 55,
+    "score_diff": -1,
+    "wp": 0.471,
+    "wp_before": 0.561,
+    "clock_before": 113,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:50) (Shotgun) 8-A.Rodgers sacked at NYJ 35 for -10 yards (6-P.Locke).",
+    "qtr": 4,
+    "seconds": 110,
+    "down": 4,
+    "distance": 10,
+    "yardline": 55,
+    "score_diff": -1,
+    "wp": 0.405,
+    "wp_before": 0.471,
+    "clock_before": 110,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.405,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2023-w2-gb-atl-57",
+  "game": {
+   "season": 2023,
+   "week": 2,
+   "date": "2023-09-17",
+   "home": "ATL",
+   "away": "GB",
+   "posteam": "GB",
+   "defteam": "ATL"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 57,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -1,
+   "posteam_score": 24,
+   "defteam_score": 25,
+   "timeouts": 0
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(:57) (Shotgun) 10-J.Love pass incomplete short left to 11-J.Reed.",
+    "qtr": 4,
+    "seconds": 57,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.422,
+    "wp_before": 0.422,
+    "clock_before": 57,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:54) (Shotgun) 10-J.Love pass incomplete deep left to 11-J.Reed [17-A.Ebiketie].",
+    "qtr": 4,
+    "seconds": 54,
+    "down": 2,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.383,
+    "wp_before": 0.422,
+    "clock_before": 54,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:48) (Shotgun) 10-J.Love pass incomplete deep left to 87-R.Doubs [97-G.Jarrett].",
+    "qtr": 4,
+    "seconds": 48,
+    "down": 3,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.293,
+    "wp_before": 0.383,
+    "clock_before": 48,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:42) (Shotgun) 10-J.Love pass short middle to 83-S.Toure to GB 38 for 13 yards (33-T.Flowers). PENALTY on GB-83-S.Toure, Illegal Shift, 5 yards, enforced at GB 25 - No Play. The Replay Official reviewed the pass completion ruling, and the play was REVERSED. (Shotgun) 10-J.Love pass incomplete short middle to 83-S.Toure (33-T.Flowers). Penalty on GB-83-S.Toure, Illegal Shift, declined.",
+    "qtr": 4,
+    "seconds": 42,
+    "down": 4,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.238,
+    "wp_before": 0.293,
+    "clock_before": 42,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.238,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2024-w7-hou-gb-120",
+  "game": {
+   "season": 2024,
+   "week": 7,
+   "date": "2024-10-20",
+   "home": "GB",
+   "away": "HOU",
+   "posteam": "HOU",
+   "defteam": "GB"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 1,
+   "distance": 10,
+   "yardline": 12,
+   "score_diff": -2,
+   "posteam_score": 19,
+   "defteam_score": 21,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "run",
+    "desc": "(2:00) 28-J.Mixon up the middle to GB 14 for -2 yards (56-E.Cooper, 55-K.Enagbare).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 1,
+    "distance": 10,
+    "yardline": 12,
+    "score_diff": -2,
+    "wp": 0.629,
+    "wp_before": 0.525,
+    "clock_before": 120,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:56) 28-J.Mixon left guard to GB 17 for -3 yards (56-E.Cooper, 97-K.Clark).",
+    "qtr": 4,
+    "seconds": 116,
+    "down": 2,
+    "distance": 12,
+    "yardline": 14,
+    "score_diff": -2,
+    "wp": 0.575,
+    "wp_before": 0.575,
+    "clock_before": 116,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "strong"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:52) (Shotgun) 7-C.Stroud pass incomplete short right to 3-T.Dell.",
+    "qtr": 4,
+    "seconds": 112,
+    "down": 3,
+    "distance": 15,
+    "yardline": 17,
+    "score_diff": -2,
+    "wp": 0.532,
+    "wp_before": 0.532,
+    "clock_before": 112,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(1:48) 15-K.Fairbairn 35 yard field goal is GOOD, Center-46-J.Weeks, Holder-6-T.Townsend.",
+    "qtr": 4,
+    "seconds": 108,
+    "down": 4,
+    "distance": 15,
+    "yardline": 17,
+    "score_diff": 1,
+    "wp": 0.457,
+    "wp_before": 0.532,
+    "clock_before": 108
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.457,
+  "real_final_score_diff": 1
+ },
+ {
+  "slug": "2023-w11-kc-phi-116",
+  "game": {
+   "season": 2023,
+   "week": 11,
+   "date": "2023-11-20",
+   "home": "KC",
+   "away": "PHI",
+   "posteam": "KC",
+   "defteam": "PHI"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 116,
+   "down": 1,
+   "distance": 10,
+   "yardline": 51,
+   "score_diff": -4,
+   "posteam_score": 17,
+   "defteam_score": 21,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:56) (Shotgun) 15-P.Mahomes pass incomplete deep right [7-H.Reddick].",
+    "qtr": 4,
+    "seconds": 116,
+    "down": 1,
+    "distance": 10,
+    "yardline": 51,
+    "score_diff": -4,
+    "wp": 0.324,
+    "wp_before": 0.271,
+    "clock_before": 116,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:50) (Shotgun) 15-P.Mahomes pass incomplete deep middle to 11-M.Valdes-Scantling.",
+    "qtr": 4,
+    "seconds": 110,
+    "down": 2,
+    "distance": 10,
+    "yardline": 51,
+    "score_diff": -4,
+    "wp": 0.292,
+    "wp_before": 0.324,
+    "clock_before": 110,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:42) (Shotgun) 15-P.Mahomes pass incomplete short right [94-J.Sweat]. PENALTY on KC-15-P.Mahomes, Intentional Grounding, 15 yards, enforced at KC 49.",
+    "qtr": 4,
+    "seconds": 102,
+    "down": 3,
+    "distance": 10,
+    "yardline": 51,
+    "score_diff": -4,
+    "wp": 0.246,
+    "wp_before": 0.292,
+    "clock_before": 102,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:35) (Shotgun) 15-P.Mahomes pass incomplete deep right to 84-Ju.Watson (2-D.Slay).",
+    "qtr": 4,
+    "seconds": 95,
+    "down": 4,
+    "distance": 25,
+    "yardline": 66,
+    "score_diff": -4,
+    "wp": 0.152,
+    "wp_before": 0.152,
+    "clock_before": 95,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.152,
+  "real_final_score_diff": -4
+ },
+ {
+  "slug": "2024-w13-chi-det-120",
+  "game": {
+   "season": 2024,
+   "week": 13,
+   "date": "2024-11-28",
+   "home": "DET",
+   "away": "CHI",
+   "posteam": "CHI",
+   "defteam": "DET"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 1,
+   "distance": 10,
+   "yardline": 50,
+   "score_diff": -3,
+   "posteam_score": 20,
+   "defteam_score": 23,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 18-C.Williams sacked at CHI 43 for -7 yards (sack split by 47-E.Turner and 99-Z.Smith).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 1,
+    "distance": 10,
+    "yardline": 50,
+    "score_diff": -3,
+    "wp": 0.367,
+    "wp_before": 0.296,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:26) (No Huddle, Shotgun) 18-C.Williams scrambles up the middle to DET 44 for 13 yards (32-B.Branch). DET-99-Z.Smith was injured during the play. ** Injury Update: CHI-65-C.Shelton has returned to the game.",
+    "qtr": 4,
+    "seconds": 86,
+    "down": 2,
+    "distance": 17,
+    "yardline": 57,
+    "score_diff": -3,
+    "wp": 0.275,
+    "wp_before": 0.367,
+    "clock_before": 86,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:08) (Shotgun) 18-C.Williams pass incomplete short middle to 13-K.Allen (69-A.Muhammad).",
+    "qtr": 4,
+    "seconds": 68,
+    "down": 3,
+    "distance": 4,
+    "yardline": 44,
+    "score_diff": -3,
+    "wp": 0.377,
+    "wp_before": 0.377,
+    "clock_before": 68,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:46) (Shotgun) 18-C.Williams pass incomplete short middle to 2-D.Moore [98-D.Reader].",
+    "qtr": 4,
+    "seconds": 46,
+    "down": 1,
+    "distance": 10,
+    "yardline": 25,
+    "score_diff": -3,
+    "wp": 0.508,
+    "wp_before": 0.157,
+    "clock_before": 46,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:36) (Shotgun) 18-C.Williams sacked at DET 41 for -6 yards (99-Z.Smith).",
+    "qtr": 4,
+    "seconds": 36,
+    "down": 2,
+    "distance": 20,
+    "yardline": 35,
+    "score_diff": -3,
+    "wp": 0.378,
+    "wp_before": 0.47,
+    "clock_before": 36,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:06) (No Huddle, Shotgun) 18-C.Williams pass incomplete deep right to 15-R.Odunze.",
+    "qtr": 4,
+    "seconds": 6,
+    "down": 3,
+    "distance": 26,
+    "yardline": 41,
+    "score_diff": -3,
+    "wp": 0.196,
+    "wp_before": 0.378,
+    "clock_before": 6,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "End of half",
+  "final_wp": 0.196,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2026-w2-tb-cle-120",
+  "game": {
+   "season": 2026,
+   "week": 2,
+   "date": "2026-09-20",
+   "home": "TB",
+   "away": "CLE",
+   "posteam": "TB",
+   "defteam": "CLE"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 4,
+   "yardline": 28,
+   "score_diff": -4,
+   "posteam_score": 19,
+   "defteam_score": 23,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "run",
+    "desc": "(2:00) 7-B.Irving up the middle to CLE 25 for 3 yards (96-M.Collins). ** Injury Update: CLE-33-R.Hickman has returned to the game.",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 4,
+    "yardline": 28,
+    "score_diff": -4,
+    "wp": 0.469,
+    "wp_before": 0.469,
+    "clock_before": 120,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:23) 7-B.Irving left tackle to CLE 19 for 6 yards (29-M.Blackmon).",
+    "qtr": 4,
+    "seconds": 83,
+    "down": 3,
+    "distance": 1,
+    "yardline": 25,
+    "score_diff": -4,
+    "wp": 0.509,
+    "wp_before": 0.469,
+    "clock_before": 83,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "strong"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:51) (Shotgun) 6-B.Mayfield pass short left to 17-T.Hurst to CLE 13 for 6 yards (29-M.Blackmon).",
+    "qtr": 4,
+    "seconds": 51,
+    "down": 1,
+    "distance": 10,
+    "yardline": 19,
+    "score_diff": -4,
+    "wp": 0.557,
+    "wp_before": 0.509,
+    "clock_before": 51,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:38) (Shotgun) 6-B.Mayfield pass incomplete deep left to 17-T.Hurst (29-M.Blackmon).",
+    "qtr": 4,
+    "seconds": 38,
+    "down": 2,
+    "distance": 14,
+    "yardline": 23,
+    "score_diff": -4,
+    "wp": 0.474,
+    "wp_before": 0.581,
+    "clock_before": 38,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:33) (Shotgun) 6-B.Mayfield scrambles right end to CLE 20 for 3 yards (49-C.Schwesinger).",
+    "qtr": 4,
+    "seconds": 33,
+    "down": 3,
+    "distance": 14,
+    "yardline": 23,
+    "score_diff": -4,
+    "wp": 0.429,
+    "wp_before": 0.474,
+    "clock_before": 33,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "weak"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:22) (Shotgun) 6-B.Mayfield pass incomplete deep middle to 2-E.Egbuka.",
+    "qtr": 4,
+    "seconds": 22,
+    "down": 4,
+    "distance": 11,
+    "yardline": 20,
+    "score_diff": -4,
+    "wp": 0.299,
+    "wp_before": 0.299,
+    "clock_before": 22,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.299,
+  "real_final_score_diff": -4
+ },
+ {
+  "slug": "2025-w8-cin-nyj-108",
+  "game": {
+   "season": 2025,
+   "week": 8,
+   "date": "2025-10-26",
+   "home": "CIN",
+   "away": "NYJ",
+   "posteam": "CIN",
+   "defteam": "NYJ"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 108,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -1,
+   "posteam_score": 38,
+   "defteam_score": 39,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:48) (Shotgun) 16-J.Flacco pass short right to 1-J.Chase to CIN 32 for 7 yards (23-A.Thomas).",
+    "qtr": 4,
+    "seconds": 108,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -1,
+    "wp": 0.517,
+    "wp_before": 0.517,
+    "clock_before": 108,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:23) (No Huddle, Shotgun) 30-C.Brown left guard to CIN 44 for 12 yards (22-T.Adams).",
+    "qtr": 4,
+    "seconds": 83,
+    "down": 2,
+    "distance": 3,
+    "yardline": 68,
+    "score_diff": -1,
+    "wp": 0.532,
+    "wp_before": 0.517,
+    "clock_before": 83,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "strong"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:48) (Shotgun) 16-J.Flacco pass incomplete deep middle to 80-A.Iosivas (44-J.Sherwood, 22-T.Adams).",
+    "qtr": 4,
+    "seconds": 48,
+    "down": 1,
+    "distance": 10,
+    "yardline": 56,
+    "score_diff": -1,
+    "wp": 0.544,
+    "wp_before": 0.532,
+    "clock_before": 48,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:42) (Shotgun) 34-S.Perine left guard to CIN 45 for 1 yard (9-W.McDonald; 95-Q.Williams).",
+    "qtr": 4,
+    "seconds": 42,
+    "down": 2,
+    "distance": 10,
+    "yardline": 56,
+    "score_diff": -1,
+    "wp": 0.504,
+    "wp_before": 0.544,
+    "clock_before": 42,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "strong"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:37) (Shotgun) 16-J.Flacco pass incomplete short left to 1-J.Chase.",
+    "qtr": 4,
+    "seconds": 37,
+    "down": 3,
+    "distance": 9,
+    "yardline": 55,
+    "score_diff": -1,
+    "wp": 0.406,
+    "wp_before": 0.406,
+    "clock_before": 37,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:32) (Shotgun) 16-J.Flacco pass incomplete short middle to 80-A.Iosivas (29-J.Brownlee).",
+    "qtr": 4,
+    "seconds": 32,
+    "down": 4,
+    "distance": 9,
+    "yardline": 55,
+    "score_diff": -1,
+    "wp": 0.346,
+    "wp_before": 0.406,
+    "clock_before": 32,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.346,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2025-w4-min-pit-62",
+  "game": {
+   "season": 2025,
+   "week": 4,
+   "date": "2025-09-28",
+   "home": "PIT",
+   "away": "MIN",
+   "posteam": "MIN",
+   "defteam": "PIT"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 62,
+   "down": 1,
+   "distance": 10,
+   "yardline": 80,
+   "score_diff": -3,
+   "posteam_score": 21,
+   "defteam_score": 24,
+   "timeouts": 0
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:02) (Shotgun) 11-C.Wentz pass deep left intended for 1-J.Nailor INTERCEPTED by 42-J.Pierre at MIN 37. 42-J.Pierre pushed ob at MIN 37 for no gain (1-J.Nailor). The Replay Official reviewed the interception ruling, and the play was REVERSED. (Shotgun) 11-C.Wentz pass incomplete deep left to 1-J.Nailor (42-J.Pierre). ** Injury Update: PIT-26-B.Echols has returned to the game.",
+    "qtr": 4,
+    "seconds": 62,
+    "down": 1,
+    "distance": 10,
+    "yardline": 80,
+    "score_diff": -3,
+    "wp": 0.239,
+    "wp_before": 0.915,
+    "clock_before": 62,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:48) (Shotgun) 11-C.Wentz pass short left to 36-Z.Scott ran ob at MIN 39 for 9 yards (42-J.Pierre; 41-P.Wilson).",
+    "qtr": 4,
+    "seconds": 48,
+    "down": 1,
+    "distance": 5,
+    "yardline": 70,
+    "score_diff": -3,
+    "wp": 0.257,
+    "wp_before": 0.235,
+    "clock_before": 48,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:43) (Shotgun) 11-C.Wentz pass incomplete short left [51-N.Herbig]. PENALTY on MIN-11-C.Wentz, Intentional Grounding, 16 yards, enforced at MIN 39.",
+    "qtr": 4,
+    "seconds": 43,
+    "down": 1,
+    "distance": 10,
+    "yardline": 61,
+    "score_diff": -3,
+    "wp": 0.249,
+    "wp_before": 0.257,
+    "clock_before": 43,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:28) (Shotgun) 11-C.Wentz pass short middle to 87-T.Hockenson to MIN 37 for 14 yards (6-P.Queen).",
+    "qtr": 4,
+    "seconds": 28,
+    "down": 2,
+    "distance": 26,
+    "yardline": 77,
+    "score_diff": -3,
+    "wp": 0.098,
+    "wp_before": 0.249,
+    "clock_before": 28,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "spike",
+    "desc": "(:15) (No Huddle) 11-C.Wentz spiked the ball to stop the clock.",
+    "qtr": 4,
+    "seconds": 15,
+    "down": 3,
+    "distance": 12,
+    "yardline": 63,
+    "score_diff": -3,
+    "wp": 0.127,
+    "wp_before": 0.098,
+    "clock_before": 15
+   },
+   {
+    "cat": "pass",
+    "desc": "(:14) (Shotgun) 11-C.Wentz pass incomplete deep middle to 3-J.Addison (25-D.Elliott).",
+    "qtr": 4,
+    "seconds": 14,
+    "down": 4,
+    "distance": 17,
+    "yardline": 68,
+    "score_diff": -3,
+    "wp": 0.075,
+    "wp_before": 0.073,
+    "clock_before": 14,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.075,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2025-w16-sea-la-120",
+  "game": {
+   "season": 2025,
+   "week": 16,
+   "date": "2025-12-18",
+   "home": "SEA",
+   "away": "LA",
+   "posteam": "SEA",
+   "defteam": "LA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 8,
+   "yardline": 60,
+   "score_diff": 0,
+   "posteam_score": 30,
+   "defteam_score": 30,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 14-S.Darnold sacked at SEA 31 for -9 yards (sack split by 8-J.Verse and 91-K.Turner).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 8,
+    "yardline": 60,
+    "score_diff": 0,
+    "wp": 0.644,
+    "wp_before": 0.66,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:54) (Shotgun) 14-S.Darnold pass incomplete short left to 88-A.Barner (91-K.Turner).",
+    "qtr": 4,
+    "seconds": 114,
+    "down": 3,
+    "distance": 17,
+    "yardline": 69,
+    "score_diff": 0,
+    "wp": 0.551,
+    "wp_before": 0.551,
+    "clock_before": 114,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "punt",
+    "desc": "(1:50) 4-M.Dickson punts 57 yards to LA 12, Center-41-C.Stoll, fair catch by 19-X.Smith.",
+    "qtr": 4,
+    "seconds": 110,
+    "down": 4,
+    "distance": 17,
+    "yardline": 69,
+    "score_diff": 0,
+    "wp": 0.483,
+    "wp_before": 0.551,
+    "clock_before": 110
+   }
+  ],
+  "result": "Punt",
+  "final_wp": 0.483,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2023-w14-kc-buf-114",
+  "game": {
+   "season": 2023,
+   "week": 14,
+   "date": "2023-12-10",
+   "home": "KC",
+   "away": "BUF",
+   "posteam": "KC",
+   "defteam": "BUF"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 114,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -3,
+   "posteam_score": 17,
+   "defteam_score": 20,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:54) (Shotgun) 15-P.Mahomes pass short left to 11-M.Valdes-Scantling ran ob at KC 32 for 7 yards. The Replay Official reviewed the pass completion ruling, and the play was Upheld. The ruling on the field stands.",
+    "qtr": 4,
+    "seconds": 114,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -3,
+    "wp": 0.343,
+    "wp_before": 0.343,
+    "clock_before": 114,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:50) (Shotgun) 15-P.Mahomes pass deep right to 4-R.Rice to BUF 49 for 19 yards (7-Ta.Johnson).",
+    "qtr": 4,
+    "seconds": 110,
+    "down": 2,
+    "distance": 3,
+    "yardline": 68,
+    "score_diff": -3,
+    "wp": 0.337,
+    "wp_before": 0.343,
+    "clock_before": 110,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:28) (No Huddle, Shotgun) 15-P.Mahomes pass incomplete short left to 4-R.Rice.",
+    "qtr": 4,
+    "seconds": 88,
+    "down": 1,
+    "distance": 10,
+    "yardline": 49,
+    "score_diff": -3,
+    "wp": 0.389,
+    "wp_before": 0.337,
+    "clock_before": 88,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:12) (Shotgun) 15-P.Mahomes pass incomplete short right [40-V.Miller].",
+    "qtr": 4,
+    "seconds": 72,
+    "down": 2,
+    "distance": 15,
+    "yardline": 54,
+    "score_diff": -3,
+    "wp": 0.327,
+    "wp_before": 0.354,
+    "clock_before": 72,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:05) (Shotgun) 15-P.Mahomes pass incomplete short left to 87-T.Kelce (91-E.Oliver).",
+    "qtr": 4,
+    "seconds": 65,
+    "down": 3,
+    "distance": 15,
+    "yardline": 54,
+    "score_diff": -3,
+    "wp": 0.271,
+    "wp_before": 0.327,
+    "clock_before": 65,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:01) (Shotgun) 15-P.Mahomes pass incomplete deep right to 87-T.Kelce [56-L.Floyd].",
+    "qtr": 4,
+    "seconds": 61,
+    "down": 4,
+    "distance": 15,
+    "yardline": 54,
+    "score_diff": -3,
+    "wp": 0.182,
+    "wp_before": 0.182,
+    "clock_before": 61,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.182,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2025-w19-car-la-32",
+  "game": {
+   "season": 2025,
+   "week": 19,
+   "date": "2026-01-10",
+   "home": "CAR",
+   "away": "LA",
+   "posteam": "CAR",
+   "defteam": "LA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 32,
+   "down": 1,
+   "distance": 10,
+   "yardline": 72,
+   "score_diff": -3,
+   "posteam_score": 31,
+   "defteam_score": 34,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(:32) (Shotgun) 9-B.Young pass incomplete deep left [8-J.Verse].",
+    "qtr": 4,
+    "seconds": 32,
+    "down": 1,
+    "distance": 10,
+    "yardline": 72,
+    "score_diff": -3,
+    "wp": 0.265,
+    "wp_before": 0.246,
+    "clock_before": 32,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:25) (Shotgun) 9-B.Young pass incomplete deep left to 18-J.Coker.",
+    "qtr": 4,
+    "seconds": 25,
+    "down": 2,
+    "distance": 10,
+    "yardline": 72,
+    "score_diff": -3,
+    "wp": 0.172,
+    "wp_before": 0.265,
+    "clock_before": 25,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:17) (Shotgun) 9-B.Young pass incomplete deep left to 15-Ji.Horn.",
+    "qtr": 4,
+    "seconds": 17,
+    "down": 3,
+    "distance": 10,
+    "yardline": 72,
+    "score_diff": -3,
+    "wp": 0.137,
+    "wp_before": 0.172,
+    "clock_before": 17,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:12) (Shotgun) 9-B.Young pass incomplete deep right to 15-Ji.Horn.",
+    "qtr": 4,
+    "seconds": 12,
+    "down": 4,
+    "distance": 10,
+    "yardline": 72,
+    "score_diff": -3,
+    "wp": 0.085,
+    "wp_before": 0.085,
+    "clock_before": 12,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.085,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2023-w12-phi-buf-112",
+  "game": {
+   "season": 2023,
+   "week": 12,
+   "date": "2023-11-26",
+   "home": "PHI",
+   "away": "BUF",
+   "posteam": "PHI",
+   "defteam": "BUF"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 112,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -3,
+   "posteam_score": 28,
+   "defteam_score": 31,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:52) (Shotgun) 1-J.Hurts pass short left to 11-A.Brown to PHI 34 for 9 yards (31-R.Douglas).",
+    "qtr": 4,
+    "seconds": 112,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -3,
+    "wp": 0.313,
+    "wp_before": 0.313,
+    "clock_before": 112,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:27) (No Huddle, Shotgun) 1-J.Hurts pass short left to 14-K.Gainwell pushed ob at PHI 38 for 4 yards (43-T.Bernard).",
+    "qtr": 4,
+    "seconds": 87,
+    "down": 2,
+    "distance": 1,
+    "yardline": 66,
+    "score_diff": -3,
+    "wp": 0.366,
+    "wp_before": 0.313,
+    "clock_before": 87,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:21) (Shotgun) 1-J.Hurts pass short left to 11-A.Brown to PHI 49 for 11 yards (21-J.Poyer).",
+    "qtr": 4,
+    "seconds": 81,
+    "down": 1,
+    "distance": 10,
+    "yardline": 62,
+    "score_diff": -3,
+    "wp": 0.357,
+    "wp_before": 0.366,
+    "clock_before": 81,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:03) (No Huddle, Shotgun) 1-J.Hurts pass short left to 14-K.Gainwell pushed ob at BUF 45 for 6 yards (39-C.Lewis).",
+    "qtr": 4,
+    "seconds": 63,
+    "down": 1,
+    "distance": 10,
+    "yardline": 51,
+    "score_diff": -3,
+    "wp": 0.389,
+    "wp_before": 0.357,
+    "clock_before": 63,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:58) (Shotgun) 1-J.Hurts pass short left to 6-D.Smith to BUF 34 for 11 yards (57-A.Epenesa).",
+    "qtr": 4,
+    "seconds": 58,
+    "down": 2,
+    "distance": 4,
+    "yardline": 45,
+    "score_diff": -3,
+    "wp": 0.417,
+    "wp_before": 0.389,
+    "clock_before": 58,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:38) (Shotgun) 1-J.Hurts sacked at BUF 49 for -10 yards (57-A.Epenesa). FUMBLES (57-A.Epenesa), RECOVERED by BUF-7-Ta.Johnson at BUF 32. The Replay Official reviewed the fumble ruling, and the play was REVERSED. (Shotgun) 1-J.Hurts pass incomplete short middle to 80-J.Jones (57-A.Epenesa).",
+    "qtr": 4,
+    "seconds": 38,
+    "down": 1,
+    "distance": 15,
+    "yardline": 39,
+    "score_diff": -3,
+    "wp": 0.422,
+    "wp_before": 0.422,
+    "clock_before": 38,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:35) (Shotgun) 1-J.Hurts up the middle to BUF 36 for 3 yards (91-E.Oliver).",
+    "qtr": 4,
+    "seconds": 35,
+    "down": 2,
+    "distance": 15,
+    "yardline": 39,
+    "score_diff": -3,
+    "wp": 0.385,
+    "wp_before": 0.422,
+    "clock_before": 35,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:30) (Shotgun) 1-J.Hurts pass incomplete short left to 11-A.Brown (21-J.Poyer).",
+    "qtr": 4,
+    "seconds": 30,
+    "down": 3,
+    "distance": 17,
+    "yardline": 41,
+    "score_diff": -3,
+    "wp": 0.275,
+    "wp_before": 0.275,
+    "clock_before": 30,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(:25) 4-J.Elliott 59 yard field goal is GOOD, Center-45-R.Lovato, Holder-10-B.Mann.",
+    "qtr": 4,
+    "seconds": 25,
+    "down": 4,
+    "distance": 17,
+    "yardline": 41,
+    "score_diff": 0,
+    "wp": 0.154,
+    "wp_before": 0.154,
+    "clock_before": 25
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.154,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2023-w16-nyj-was-101",
+  "game": {
+   "season": 2023,
+   "week": 16,
+   "date": "2023-12-24",
+   "home": "NYJ",
+   "away": "WAS",
+   "posteam": "NYJ",
+   "defteam": "WAS"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 101,
+   "down": 1,
+   "distance": 10,
+   "yardline": 67,
+   "score_diff": -1,
+   "posteam_score": 27,
+   "defteam_score": 28,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:41) (Shotgun) 14-T.Siemian pass short middle to 83-T.Conklin to NYJ 41 for 8 yards (57-C.Barton).",
+    "qtr": 4,
+    "seconds": 101,
+    "down": 1,
+    "distance": 10,
+    "yardline": 67,
+    "score_diff": -1,
+    "wp": 0.534,
+    "wp_before": 0.653,
+    "clock_before": 101,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:20) (No Huddle, Shotgun) 14-T.Siemian pass short middle to 20-Bre.Hall to NYJ 42 for 1 yard (20-J.Martin). WAS-20-J.Martin was injured during the play.",
+    "qtr": 4,
+    "seconds": 80,
+    "down": 2,
+    "distance": 2,
+    "yardline": 59,
+    "score_diff": -1,
+    "wp": 0.539,
+    "wp_before": 0.534,
+    "clock_before": 80,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:07) (Shotgun) 20-Bre.Hall left end to NYJ 47 for 5 yards (47-K.Hudson).",
+    "qtr": 4,
+    "seconds": 67,
+    "down": 3,
+    "distance": 1,
+    "yardline": 58,
+    "score_diff": -1,
+    "wp": 0.486,
+    "wp_before": 0.486,
+    "clock_before": 67,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "strong"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:45) (No Huddle, Shotgun) 14-T.Siemian pass short middle to 20-Bre.Hall to WAS 39 for 14 yards (47-K.Hudson) [93-J.Allen].",
+    "qtr": 4,
+    "seconds": 45,
+    "down": 1,
+    "distance": 10,
+    "yardline": 53,
+    "score_diff": -1,
+    "wp": 0.551,
+    "wp_before": 0.486,
+    "clock_before": 45,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:22) (No Huddle, Shotgun) 14-T.Siemian pass incomplete short right to 16-J.Brownlee (29-K.Fuller).",
+    "qtr": 4,
+    "seconds": 22,
+    "down": 1,
+    "distance": 10,
+    "yardline": 39,
+    "score_diff": -1,
+    "wp": 0.609,
+    "wp_before": 0.551,
+    "clock_before": 22,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(:19) (Shotgun) 14-T.Siemian scrambles up the middle to WAS 36 for 3 yards (93-J.Allen).",
+    "qtr": 4,
+    "seconds": 19,
+    "down": 2,
+    "distance": 10,
+    "yardline": 39,
+    "score_diff": -1,
+    "wp": 0.549,
+    "wp_before": 0.609,
+    "clock_before": 19,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:13) (Shotgun) 14-T.Siemian pass incomplete short left to 17-G.Wilson.",
+    "qtr": 4,
+    "seconds": 13,
+    "down": 3,
+    "distance": 7,
+    "yardline": 36,
+    "score_diff": -1,
+    "wp": 0.437,
+    "wp_before": 0.437,
+    "clock_before": 13,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(:10) 9-G.Zuerlein 54 yard field goal is GOOD, Center-42-T.Hennessy, Holder-5-T.Morstead.",
+    "qtr": 4,
+    "seconds": 10,
+    "down": 4,
+    "distance": 7,
+    "yardline": 36,
+    "score_diff": 2,
+    "wp": 0.376,
+    "wp_before": 0.437,
+    "clock_before": 10
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.376,
+  "real_final_score_diff": 2
+ },
+ {
+  "slug": "2023-w2-cle-pit-120",
+  "game": {
+   "season": 2023,
+   "week": 2,
+   "date": "2023-09-18",
+   "home": "PIT",
+   "away": "CLE",
+   "posteam": "CLE",
+   "defteam": "PIT"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 7,
+   "yardline": 47,
+   "score_diff": -4,
+   "posteam_score": 22,
+   "defteam_score": 26,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 4-D.Watson pass incomplete short left to 8-E.Moore.",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 7,
+    "yardline": 47,
+    "score_diff": -4,
+    "wp": 0.319,
+    "wp_before": 0.303,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:53) (Shotgun) 4-D.Watson sacked at PIT 49 for -2 yards (37-E.Riley).",
+    "qtr": 4,
+    "seconds": 113,
+    "down": 3,
+    "distance": 7,
+    "yardline": 47,
+    "score_diff": -4,
+    "wp": 0.269,
+    "wp_before": 0.319,
+    "clock_before": 113,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:05) (Shotgun) 4-D.Watson pass incomplete deep right to 11-D.Peoples-Jones.",
+    "qtr": 4,
+    "seconds": 65,
+    "down": 4,
+    "distance": 9,
+    "yardline": 49,
+    "score_diff": -4,
+    "wp": 0.162,
+    "wp_before": 0.269,
+    "clock_before": 65,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.162,
+  "real_final_score_diff": -4
+ },
+ {
+  "slug": "2025-w12-kc-ind-120",
+  "game": {
+   "season": 2025,
+   "week": 12,
+   "date": "2025-11-23",
+   "home": "KC",
+   "away": "IND",
+   "posteam": "KC",
+   "defteam": "IND"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 8,
+   "yardline": 22,
+   "score_diff": -3,
+   "posteam_score": 17,
+   "defteam_score": 20,
+   "timeouts": 3
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 15-P.Mahomes pass short middle to 9-J.Smith-Schuster to IND 14 for 8 yards (1-A.Gardner).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 8,
+    "yardline": 22,
+    "score_diff": -3,
+    "wp": 0.566,
+    "wp_before": 0.586,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:54) (Shotgun) 29-K.Hunt right tackle to IND 11 for 3 yards (51-K.Paye; 90-G.Stewart).",
+    "qtr": 4,
+    "seconds": 114,
+    "down": 1,
+    "distance": 10,
+    "yardline": 14,
+    "score_diff": -3,
+    "wp": 0.626,
+    "wp_before": 0.626,
+    "clock_before": 114,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "weak"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:49) (Shotgun) 15-P.Mahomes pass short right to 24-B.Smith to IND 5 for 6 yards (20-N.Cross).",
+    "qtr": 4,
+    "seconds": 109,
+    "down": 2,
+    "distance": 7,
+    "yardline": 11,
+    "score_diff": -3,
+    "wp": 0.629,
+    "wp_before": 0.629,
+    "clock_before": 109,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:10) (Shotgun) 77-J.Moore reported in as eligible. 29-K.Hunt up the middle to IND 2 for 3 yards (53-G.Pratt).",
+    "qtr": 4,
+    "seconds": 70,
+    "down": 3,
+    "distance": 1,
+    "yardline": 5,
+    "score_diff": -3,
+    "wp": 0.654,
+    "wp_before": 0.629,
+    "clock_before": 70,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:05) (Shotgun) 77-J.Moore reported in as eligible. 29-K.Hunt left guard to IND 3 for -1 yards (53-G.Pratt).",
+    "qtr": 4,
+    "seconds": 65,
+    "down": 1,
+    "distance": 2,
+    "yardline": 2,
+    "score_diff": -3,
+    "wp": 0.713,
+    "wp_before": 0.713,
+    "clock_before": 65,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "strong"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:26) (Shotgun) 15-P.Mahomes pass incomplete short left.",
+    "qtr": 4,
+    "seconds": 26,
+    "down": 2,
+    "distance": 3,
+    "yardline": 3,
+    "score_diff": -3,
+    "wp": 0.616,
+    "wp_before": 0.713,
+    "clock_before": 26,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:20) (Shotgun) 15-P.Mahomes sacked at IND 7 for -4 yards (51-K.Paye).",
+    "qtr": 4,
+    "seconds": 20,
+    "down": 3,
+    "distance": 3,
+    "yardline": 3,
+    "score_diff": -3,
+    "wp": 0.547,
+    "wp_before": 0.547,
+    "clock_before": 20,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(:03) 7-H.Butker 25 yard field goal is GOOD, Center-41-J.Winchester, Holder-14-M.Araiza.",
+    "qtr": 4,
+    "seconds": 3,
+    "down": 4,
+    "distance": 7,
+    "yardline": 7,
+    "score_diff": 0,
+    "wp": 0.413,
+    "wp_before": 0.413,
+    "clock_before": 3
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.413,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2023-w16-ten-sea-57",
+  "game": {
+   "season": 2023,
+   "week": 16,
+   "date": "2023-12-24",
+   "home": "TEN",
+   "away": "SEA",
+   "posteam": "TEN",
+   "defteam": "SEA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 57,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -3,
+   "posteam_score": 17,
+   "defteam_score": 20,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(:57) (Shotgun) 17-R.Tannehill sacked at TEN 21 for -4 yards (53-B.Mafe).",
+    "qtr": 4,
+    "seconds": 57,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -3,
+    "wp": 0.281,
+    "wp_before": 0.281,
+    "clock_before": 57,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:50) (Shotgun) 17-R.Tannehill pass short middle to 85-C.Okonkwo to TEN 38 for 17 yards (23-A.Burns, 54-B.Wagner).",
+    "qtr": 4,
+    "seconds": 50,
+    "down": 2,
+    "distance": 14,
+    "yardline": 79,
+    "score_diff": -3,
+    "wp": 0.14,
+    "wp_before": 0.14,
+    "clock_before": 50,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "spike",
+    "desc": "(:36) (No Huddle) 17-R.Tannehill spiked the ball to stop the clock.",
+    "qtr": 4,
+    "seconds": 36,
+    "down": 1,
+    "distance": 10,
+    "yardline": 62,
+    "score_diff": -3,
+    "wp": 0.261,
+    "wp_before": 0.14,
+    "clock_before": 36
+   },
+   {
+    "cat": "pass",
+    "desc": "(:35) (Shotgun) 17-R.Tannehill pass short middle to 16-T.Burks pushed ob at 50 for 12 yards (27-T.Woolen).",
+    "qtr": 4,
+    "seconds": 35,
+    "down": 2,
+    "distance": 10,
+    "yardline": 62,
+    "score_diff": -3,
+    "wp": 0.225,
+    "wp_before": 0.261,
+    "clock_before": 35,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:29) (Shotgun) 17-R.Tannehill sacked at TEN 40 for -10 yards (55-D.Jones).",
+    "qtr": 4,
+    "seconds": 29,
+    "down": 1,
+    "distance": 10,
+    "yardline": 50,
+    "score_diff": -3,
+    "wp": 0.297,
+    "wp_before": 0.225,
+    "clock_before": 29,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:11) (No Huddle, Shotgun) 17-R.Tannehill pass short left to 14-C.Dowell to TEN 43 for 3 yards (27-T.Woolen). SEA-27-T.Woolen was injured during the play.",
+    "qtr": 4,
+    "seconds": 11,
+    "down": 2,
+    "distance": 20,
+    "yardline": 60,
+    "score_diff": -3,
+    "wp": 0.129,
+    "wp_before": 0.297,
+    "clock_before": 11,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "End of half",
+  "final_wp": 0.129,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2026-w5-sea-sf-111",
+  "game": {
+   "season": 2026,
+   "week": 5,
+   "date": "2026-10-11",
+   "home": "SEA",
+   "away": "SF",
+   "posteam": "SEA",
+   "defteam": "SF"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 111,
+   "down": 1,
+   "distance": 10,
+   "yardline": 85,
+   "score_diff": -3,
+   "posteam_score": 29,
+   "defteam_score": 32,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:51) (Shotgun) 14-S.Darnold pass deep right to 11-J.Smith-Njigba to 50 for 35 yards (53-J.Dugger).",
+    "qtr": 4,
+    "seconds": 111,
+    "down": 1,
+    "distance": 10,
+    "yardline": 85,
+    "score_diff": -3,
+    "wp": 0.304,
+    "wp_before": 0.346,
+    "clock_before": 111,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:13) (Shotgun) 14-S.Darnold pass incomplete short right to 11-J.Smith-Njigba (0-R.Green).",
+    "qtr": 4,
+    "seconds": 73,
+    "down": 1,
+    "distance": 10,
+    "yardline": 50,
+    "score_diff": -3,
+    "wp": 0.412,
+    "wp_before": 0.304,
+    "clock_before": 73,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:09) (Shotgun) 14-S.Darnold pass incomplete short right to 88-A.Barner [54-F.Warner].",
+    "qtr": 4,
+    "seconds": 69,
+    "down": 2,
+    "distance": 10,
+    "yardline": 50,
+    "score_diff": -3,
+    "wp": 0.366,
+    "wp_before": 0.412,
+    "clock_before": 69,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:00) (Shotgun) 14-S.Darnold pass incomplete deep left to 11-J.Smith-Njigba.",
+    "qtr": 4,
+    "seconds": 60,
+    "down": 3,
+    "distance": 10,
+    "yardline": 50,
+    "score_diff": -3,
+    "wp": 0.299,
+    "wp_before": 0.366,
+    "clock_before": 60,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:54) (Shotgun) 14-S.Darnold pass short left to 10-C.Kupp pushed ob at SF 41 for 9 yards (6-M.Mustapha). The Replay Official reviewed the short of the line to gain ruling, and the play was Upheld. The ruling on the field stands.",
+    "qtr": 4,
+    "seconds": 54,
+    "down": 4,
+    "distance": 10,
+    "yardline": 50,
+    "score_diff": -3,
+    "wp": 0.199,
+    "wp_before": 0.199,
+    "clock_before": 54,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.199,
+  "real_final_score_diff": -3
+ },
+ {
+  "slug": "2024-w2-det-tb-33",
+  "game": {
+   "season": 2024,
+   "week": 2,
+   "date": "2024-09-15",
+   "home": "DET",
+   "away": "TB",
+   "posteam": "DET",
+   "defteam": "TB"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 33,
+   "down": 1,
+   "distance": 10,
+   "yardline": 44,
+   "score_diff": -4,
+   "posteam_score": 16,
+   "defteam_score": 20,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(:33) (Shotgun) 16-J.Goff pass short left to 14-A.St. Brown to TB 35 for 9 yards (54-L.David).",
+    "qtr": 4,
+    "seconds": 33,
+    "down": 1,
+    "distance": 10,
+    "yardline": 44,
+    "score_diff": -4,
+    "wp": 0.382,
+    "wp_before": 0.868,
+    "clock_before": 33,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:27) (Shotgun) 16-J.Goff pass short right to 26-J.Gibbs to TB 26 for 9 yards (23-T.Smith, 8-S.Dennis).",
+    "qtr": 4,
+    "seconds": 27,
+    "down": 2,
+    "distance": 1,
+    "yardline": 35,
+    "score_diff": -4,
+    "wp": 0.331,
+    "wp_before": 0.331,
+    "clock_before": 27,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "spike",
+    "desc": "(:15) (No Huddle) 16-J.Goff spiked the ball to stop the clock.",
+    "qtr": 4,
+    "seconds": 15,
+    "down": 1,
+    "distance": 10,
+    "yardline": 26,
+    "score_diff": -4,
+    "wp": 0.312,
+    "wp_before": 0.331,
+    "clock_before": 15
+   },
+   {
+    "cat": "pass",
+    "desc": "(:14) (Shotgun) 16-J.Goff pass incomplete short left to 9-J.Williams.",
+    "qtr": 4,
+    "seconds": 14,
+    "down": 2,
+    "distance": 10,
+    "yardline": 26,
+    "score_diff": -4,
+    "wp": 0.31,
+    "wp_before": 0.312,
+    "clock_before": 14,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:10) (Shotgun) 16-J.Goff pass incomplete short right to 9-J.Williams (27-Z.McCollum) [98-A.Nelson].",
+    "qtr": 4,
+    "seconds": 10,
+    "down": 3,
+    "distance": 10,
+    "yardline": 26,
+    "score_diff": -4,
+    "wp": 0.298,
+    "wp_before": 0.31,
+    "clock_before": 10,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:06) (Shotgun) 16-J.Goff pass incomplete short left to 85-T.Kennedy [0-Y.Diaby].",
+    "qtr": 4,
+    "seconds": 6,
+    "down": 4,
+    "distance": 10,
+    "yardline": 26,
+    "score_diff": -4,
+    "wp": 0.235,
+    "wp_before": 0.298,
+    "clock_before": 6,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.235,
+  "real_final_score_diff": -4
+ },
+ {
+  "slug": "2023-w4-la-ind-116",
+  "game": {
+   "season": 2023,
+   "week": 4,
+   "date": "2023-10-01",
+   "home": "IND",
+   "away": "LA",
+   "posteam": "LA",
+   "defteam": "IND"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 116,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": 0,
+   "posteam_score": 23,
+   "defteam_score": 23,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:56) (Shotgun) 9-M.Stafford pass short right to 89-T.Higbee pushed ob at LA 30 for 5 yards (32-J.Blackmon).",
+    "qtr": 4,
+    "seconds": 116,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": 0,
+    "wp": 0.56,
+    "wp_before": 0.56,
+    "clock_before": 116,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:52) (No Huddle, Shotgun) 9-M.Stafford pass short left to 5-T.Atwell pushed ob at LA 35 for 5 yards (23-K.Moore). The Replay Official reviewed the pass completion ruling, and the play was REVERSED. (No Huddle, Shotgun) 9-M.Stafford pass incomplete short left to 5-T.Atwell (23-K.Moore).",
+    "qtr": 4,
+    "seconds": 112,
+    "down": 2,
+    "distance": 5,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.547,
+    "wp_before": 0.56,
+    "clock_before": 112,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:48) (Shotgun) 9-M.Stafford pass short left to 89-T.Higbee to LA 38 for 8 yards (45-E.Speed). The Replay Official reviewed the pass completion ruling, and the play was REVERSED. (Shotgun) 9-M.Stafford pass incomplete short left to 89-T.Higbee (45-E.Speed).",
+    "qtr": 4,
+    "seconds": 108,
+    "down": 3,
+    "distance": 5,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.498,
+    "wp_before": 0.547,
+    "clock_before": 108,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "punt",
+    "desc": "(1:44) 42-E.Evans punts 48 yards to IND 22, Center-47-A.Ward. 6-I.McKenzie to IND 35 for 13 yards (56-C.Rozeboom; 24-R.Freeman).",
+    "qtr": 4,
+    "seconds": 104,
+    "down": 4,
+    "distance": 5,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.413,
+    "wp_before": 0.498,
+    "clock_before": 104
+   }
+  ],
+  "result": "Punt",
+  "final_wp": 0.413,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2024-w11-nyj-ind-46",
+  "game": {
+   "season": 2024,
+   "week": 11,
+   "date": "2024-11-17",
+   "home": "NYJ",
+   "away": "IND",
+   "posteam": "NYJ",
+   "defteam": "IND"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 46,
+   "down": 1,
+   "distance": 10,
+   "yardline": 70,
+   "score_diff": -1,
+   "posteam_score": 27,
+   "defteam_score": 28,
+   "timeouts": 0
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(:46) (Shotgun) 8-A.Rodgers sacked at NYJ 25 for -5 yards (51-K.Paye). FUMBLES (51-K.Paye) [51-K.Paye], recovered by NYJ-83-T.Conklin at NYJ 20. 83-T.Conklin to NYJ 17 for -3 yards (99-D.Buckner).",
+    "qtr": 4,
+    "seconds": 46,
+    "down": 1,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": -1,
+    "wp": 0.41,
+    "wp_before": 0.402,
+    "clock_before": 46,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:23) (No Huddle, Shotgun) 8-A.Rodgers pass short middle to 20-B.Hall to NYJ 28 for 11 yards (23-K.Moore, 45-E.Speed). PENALTY on IND-45-E.Speed, Defensive Delay of Game, 5 yards, enforced at NYJ 28.",
+    "qtr": 4,
+    "seconds": 23,
+    "down": 2,
+    "distance": 23,
+    "yardline": 83,
+    "score_diff": -1,
+    "wp": 0.269,
+    "wp_before": 0.41,
+    "clock_before": 23,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:13) (Shotgun) 8-A.Rodgers sacked at NYJ 28 for -5 yards (51-K.Paye).",
+    "qtr": 4,
+    "seconds": 13,
+    "down": 3,
+    "distance": 7,
+    "yardline": 67,
+    "score_diff": -1,
+    "wp": 0.258,
+    "wp_before": 0.269,
+    "clock_before": 13,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "End of half",
+  "final_wp": 0.258,
+  "real_final_score_diff": -1
+ },
+ {
+  "slug": "2023-w7-tb-atl-117",
+  "game": {
+   "season": 2023,
+   "week": 7,
+   "date": "2023-10-22",
+   "home": "TB",
+   "away": "ATL",
+   "posteam": "TB",
+   "defteam": "ATL"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 117,
+   "down": 1,
+   "distance": 10,
+   "yardline": 35,
+   "score_diff": -3,
+   "posteam_score": 10,
+   "defteam_score": 13,
+   "timeouts": 0
+  },
+  "plays": [
+   {
+    "cat": "run",
+    "desc": "(1:57) (Shotgun) 1-R.White right tackle to ATL 32 for 3 yards (55-K.Elliss).",
+    "qtr": 4,
+    "seconds": 117,
+    "down": 1,
+    "distance": 10,
+    "yardline": 35,
+    "score_diff": -3,
+    "wp": 0.477,
+    "wp_before": 0.287,
+    "clock_before": 117,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "weak"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:34) (No Huddle, Shotgun) 6-B.Mayfield pass short right to 88-C.Otton pushed ob at ATL 24 for 8 yards (27-R.Grant).",
+    "qtr": 4,
+    "seconds": 94,
+    "down": 2,
+    "distance": 7,
+    "yardline": 32,
+    "score_diff": -3,
+    "wp": 0.431,
+    "wp_before": 0.477,
+    "clock_before": 94,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "run",
+    "desc": "(1:28) (Shotgun) 1-R.White up the middle to ATL 23 for 1 yard (93-C.Campbell; 0-L.Carter).",
+    "qtr": 4,
+    "seconds": 88,
+    "down": 1,
+    "distance": 10,
+    "yardline": 24,
+    "score_diff": -3,
+    "wp": 0.529,
+    "wp_before": 0.431,
+    "clock_before": 88,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "middle"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:05) (Shotgun) 6-B.Mayfield pass incomplete short middle to 14-C.Godwin (20-D.Alford).",
+    "qtr": 4,
+    "seconds": 65,
+    "down": 1,
+    "distance": 8,
+    "yardline": 8,
+    "score_diff": -3,
+    "wp": 0.627,
+    "wp_before": 0.51,
+    "clock_before": 65,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:00) (Shotgun) 6-B.Mayfield pass incomplete short left to 14-C.Godwin [90-D.Onyemata].",
+    "qtr": 4,
+    "seconds": 60,
+    "down": 2,
+    "distance": 8,
+    "yardline": 8,
+    "score_diff": -3,
+    "wp": 0.567,
+    "wp_before": 0.627,
+    "clock_before": 60,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:56) (Shotgun) 6-B.Mayfield sacked at ATL 18 for -10 yards (90-D.Onyemata).",
+    "qtr": 4,
+    "seconds": 56,
+    "down": 3,
+    "distance": 8,
+    "yardline": 8,
+    "score_diff": -3,
+    "wp": 0.532,
+    "wp_before": 0.567,
+    "clock_before": 56,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(:49) 4-C.McLaughlin 36 yard field goal is GOOD, Center-97-Z.Triner, Holder-5-J.Camarda.",
+    "qtr": 4,
+    "seconds": 49,
+    "down": 4,
+    "distance": 18,
+    "yardline": 18,
+    "score_diff": 0,
+    "wp": 0.333,
+    "wp_before": 0.333,
+    "clock_before": 49
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.333,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2024-w11-cin-lac-120",
+  "game": {
+   "season": 2024,
+   "week": 11,
+   "date": "2024-11-17",
+   "home": "LAC",
+   "away": "CIN",
+   "posteam": "CIN",
+   "defteam": "LAC"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 8,
+   "yardline": 33,
+   "score_diff": 0,
+   "posteam_score": 27,
+   "defteam_score": 27,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(2:00) (Shotgun) 9-J.Burrow pass incomplete short right to 5-T.Higgins (7-K.Fulton).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 8,
+    "yardline": 33,
+    "score_diff": 0,
+    "wp": 0.679,
+    "wp_before": 0.64,
+    "clock_before": 120,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:56) (Shotgun) 9-J.Burrow pass incomplete short right to 1-J.Chase.",
+    "qtr": 4,
+    "seconds": 116,
+    "down": 3,
+    "distance": 8,
+    "yardline": 33,
+    "score_diff": 0,
+    "wp": 0.608,
+    "wp_before": 0.679,
+    "clock_before": 116,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(1:52) 2-E.McPherson 51 yard field goal is No Good, Wide Left, Center-48-C.Adomitis, Holder-8-R.Rehkow.",
+    "qtr": 4,
+    "seconds": 112,
+    "down": 4,
+    "distance": 8,
+    "yardline": 33,
+    "score_diff": 0,
+    "wp": 0.535,
+    "wp_before": 0.608,
+    "clock_before": 112
+   }
+  ],
+  "result": "Missed field goal",
+  "final_wp": 0.535,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2023-w1-lac-mia-105",
+  "game": {
+   "season": 2023,
+   "week": 1,
+   "date": "2023-09-10",
+   "home": "LAC",
+   "away": "MIA",
+   "posteam": "LAC",
+   "defteam": "MIA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 105,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -2,
+   "posteam_score": 34,
+   "defteam_score": 36,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:45) (Shotgun) 10-J.Herbert pass short right to 7-G.Everett pushed ob at LAC 35 for 10 yards (4-K.Kohou).",
+    "qtr": 4,
+    "seconds": 105,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -2,
+    "wp": 0.412,
+    "wp_before": 0.412,
+    "clock_before": 105,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:38) (Shotgun) 10-J.Herbert pass incomplete short right. PENALTY on LAC-10-J.Herbert, Intentional Grounding, 11 yards, enforced at LAC 35.",
+    "qtr": 4,
+    "seconds": 98,
+    "down": 1,
+    "distance": 10,
+    "yardline": 65,
+    "score_diff": -2,
+    "wp": 0.433,
+    "wp_before": 0.412,
+    "clock_before": 98,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:18) (Shotgun) 10-J.Herbert sacked at LAC 16 for -8 yards (92-Z.Sieler).",
+    "qtr": 4,
+    "seconds": 78,
+    "down": 2,
+    "distance": 21,
+    "yardline": 76,
+    "score_diff": -2,
+    "wp": 0.369,
+    "wp_before": 0.433,
+    "clock_before": 78,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:09) (Shotgun) 10-J.Herbert pass deep right to 81-M.Williams to LAC 33 for 17 yards (8-J.Holland).",
+    "qtr": 4,
+    "seconds": 69,
+    "down": 3,
+    "distance": 29,
+    "yardline": 84,
+    "score_diff": -2,
+    "wp": 0.3,
+    "wp_before": 0.3,
+    "clock_before": 69,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "weak",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:01) (Shotgun) 10-J.Herbert sacked at LAC 24 for -9 yards (sack split by 15-J.Phillips and 20-J.Bethel).",
+    "qtr": 4,
+    "seconds": 61,
+    "down": 4,
+    "distance": 12,
+    "yardline": 67,
+    "score_diff": -2,
+    "wp": 0.271,
+    "wp_before": 0.271,
+    "clock_before": 61,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.271,
+  "real_final_score_diff": -2
+ },
+ {
+  "slug": "2023-w4-den-chi-120",
+  "game": {
+   "season": 2023,
+   "week": 4,
+   "date": "2023-10-01",
+   "home": "CHI",
+   "away": "DEN",
+   "posteam": "DEN",
+   "defteam": "CHI"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 120,
+   "down": 2,
+   "distance": 9,
+   "yardline": 32,
+   "score_diff": 0,
+   "posteam_score": 28,
+   "defteam_score": 28,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "run",
+    "desc": "(2:00) 25-S.Perine right end to CHI 33 for -1 yards (49-T.Edmunds, 95-D.Walker).",
+    "qtr": 4,
+    "seconds": 120,
+    "down": 2,
+    "distance": 9,
+    "yardline": 32,
+    "score_diff": 0,
+    "wp": 0.679,
+    "wp_before": 0.691,
+    "clock_before": 120,
+    "call": {
+     "family": "run",
+     "base": "Run",
+     "side": "weak"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(1:55) (Shotgun) 3-R.Wilson pass incomplete short left to 14-C.Sutton (32-T.Smith).",
+    "qtr": 4,
+    "seconds": 115,
+    "down": 3,
+    "distance": 10,
+    "yardline": 33,
+    "score_diff": 0,
+    "wp": 0.612,
+    "wp_before": 0.612,
+    "clock_before": 115,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "field_goal",
+    "desc": "(1:51) 16-W.Lutz 51 yard field goal is GOOD, Center-48-M.Fraboni, Holder-9-R.Dixon.",
+    "qtr": 4,
+    "seconds": 111,
+    "down": 4,
+    "distance": 10,
+    "yardline": 33,
+    "score_diff": 3,
+    "wp": 0.539,
+    "wp_before": 0.612,
+    "clock_before": 111
+   }
+  ],
+  "result": "Field goal",
+  "final_wp": 0.539,
+  "real_final_score_diff": 3
+ },
+ {
+  "slug": "2024-w17-was-atl-79",
+  "game": {
+   "season": 2024,
+   "week": 17,
+   "date": "2024-12-29",
+   "home": "WAS",
+   "away": "ATL",
+   "posteam": "WAS",
+   "defteam": "ATL"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 79,
+   "down": 1,
+   "distance": 10,
+   "yardline": 70,
+   "score_diff": 0,
+   "posteam_score": 24,
+   "defteam_score": 24,
+   "timeouts": 1
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(1:19) (Shotgun) 5-J.Daniels sacked at WAS 30 for 0 yards (17-A.Ebiketie).",
+    "qtr": 4,
+    "seconds": 79,
+    "down": 1,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.66,
+    "wp_before": 0.652,
+    "clock_before": 79,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:59) (No Huddle, Shotgun) 5-J.Daniels pass incomplete short middle to 17-T.McLaurin.",
+    "qtr": 4,
+    "seconds": 59,
+    "down": 2,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.653,
+    "wp_before": 0.66,
+    "clock_before": 59,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:55) (Shotgun) 5-J.Daniels pass incomplete deep middle to 14-O.Zaccheaus.",
+    "qtr": 4,
+    "seconds": 55,
+    "down": 3,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.624,
+    "wp_before": 0.653,
+    "clock_before": 55,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   },
+   {
+    "cat": "punt",
+    "desc": "(:50) 10-T.Way punts 61 yards to ATL 9, Center-69-T.Ott. 26-A.Williams to ATL 19 for 10 yards (35-P.Butler).",
+    "qtr": 4,
+    "seconds": 50,
+    "down": 4,
+    "distance": 10,
+    "yardline": 70,
+    "score_diff": 0,
+    "wp": 0.514,
+    "wp_before": 0.624,
+    "clock_before": 50
+   }
+  ],
+  "result": "Punt",
+  "final_wp": 0.514,
+  "real_final_score_diff": 0
+ },
+ {
+  "slug": "2023-w8-cle-sea-38",
+  "game": {
+   "season": 2023,
+   "week": 8,
+   "date": "2023-10-29",
+   "home": "SEA",
+   "away": "CLE",
+   "posteam": "CLE",
+   "defteam": "SEA"
+  },
+  "start": {
+   "qtr": 4,
+   "seconds": 38,
+   "down": 1,
+   "distance": 10,
+   "yardline": 75,
+   "score_diff": -4,
+   "posteam_score": 20,
+   "defteam_score": 24,
+   "timeouts": 2
+  },
+  "plays": [
+   {
+    "cat": "pass",
+    "desc": "(:38) (Shotgun) 10-P.Walker pass incomplete short left to 2-A.Cooper (27-T.Woolen) [55-D.Jones].",
+    "qtr": 4,
+    "seconds": 38,
+    "down": 1,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -4,
+    "wp": 0.183,
+    "wp_before": 0.183,
+    "clock_before": 38,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:33) (Shotgun) 10-P.Walker pass incomplete short left to 8-E.Moore.",
+    "qtr": 4,
+    "seconds": 33,
+    "down": 2,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -4,
+    "wp": 0.156,
+    "wp_before": 0.183,
+    "clock_before": 33,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:28) (Shotgun) 10-P.Walker sacked at CLE 16 for -9 yards (52-D.Taylor).",
+    "qtr": 4,
+    "seconds": 28,
+    "down": 3,
+    "distance": 10,
+    "yardline": 75,
+    "score_diff": -4,
+    "wp": 0.092,
+    "wp_before": 0.156,
+    "clock_before": 28,
+    "call": {
+     "family": "pass",
+     "base": "Quick pass",
+     "side": "middle",
+     "target": "WR1",
+     "depth": "short"
+    }
+   },
+   {
+    "cat": "pass",
+    "desc": "(:22) (Shotgun) 10-P.Walker pass incomplete deep left to 85-D.Njoku.",
+    "qtr": 4,
+    "seconds": 22,
+    "down": 4,
+    "distance": 19,
+    "yardline": 84,
+    "score_diff": -4,
+    "wp": 0.046,
+    "wp_before": 0.046,
+    "clock_before": 22,
+    "call": {
+     "family": "pass",
+     "base": "Deep pass",
+     "side": "strong",
+     "target": "WR1",
+     "depth": "deep"
+    }
+   }
+  ],
+  "result": "Turnover on downs",
+  "final_wp": 0.046,
+  "real_final_score_diff": -4
+ }
+]

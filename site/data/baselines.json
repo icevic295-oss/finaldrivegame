@@ -1,0 +1,750 @@
+{
+ "wp_delta": {
+  "4|short|close|le120": {
+   "field_goal": 0.0016,
+   "run": -0.0057,
+   "pass": -0.0165,
+   "punt": -0.0072
+  },
+  "1|long|td|le120": {
+   "pass": -0.1024,
+   "run": -0.0058
+  },
+  "2|short|td|le120": {
+   "run": 0.0277,
+   "pass": 0.02
+  },
+  "2|long|td|le120": {
+   "pass": -0.0261,
+   "run": -0.0256
+  },
+  "3|long|td|le120": {
+   "pass": -0.027
+  },
+  "4|long|td|le120": {
+   "pass": -0.0244
+  },
+  "1|long|close|le120": {
+   "run": 0.2347,
+   "pass": 0.0022,
+   "kneel": 0.3509
+  },
+  "2|long|close|le120": {
+   "run": -0.0003,
+   "pass": -0.0202,
+   "kneel": 0.0024
+  },
+  "3|mid|close|le60": {
+   "run": -0.0029,
+   "kneel": 0.0009,
+   "pass": -0.0145
+  },
+  "3|long|close|le60": {
+   "run": -0.0094,
+   "kneel": -0.0001,
+   "pass": -0.0416
+  },
+  "4|long|close|le30": {
+   "punt": -0.0155,
+   "field_goal": -0.007,
+   "pass": -0.0058
+  },
+  "3|long|close|le120": {
+   "run": -0.0031,
+   "pass": -0.0205
+  },
+  "4|mid|close|le120": {
+   "field_goal": -0.0187,
+   "punt": -0.0166,
+   "pass": -0.034
+  },
+  "2|short|close|le120": {
+   "pass": 0.024,
+   "run": 0.0079
+  },
+  "1|long|close|le60": {
+   "pass": 0.0386,
+   "run": 0.1955,
+   "kneel": 0.4186
+  },
+  "2|mid|close|le30": {
+   "pass": -0.0151
+  },
+  "1|long|close|le30": {
+   "spike": 0.0878,
+   "kneel": 0.5544,
+   "pass": -0.0431,
+   "field_goal": 0.0227,
+   "run": 0.1573
+  },
+  "2|long|close|le30": {
+   "pass": -0.0262,
+   "kneel": -0.0026,
+   "run": -0.0097,
+   "field_goal": -0.0008
+  },
+  "3|long|close|le30": {
+   "pass": -0.0298,
+   "kneel": -0.001,
+   "field_goal": -0.008
+  },
+  "1|long|far|le120": {
+   "pass": -0.1012,
+   "run": -0.2403,
+   "spike": 0.0041
+  },
+  "2|long|far|le120": {
+   "pass": -0.003,
+   "run": -0.001
+  },
+  "2|short|far|le120": {
+   "run": 0.0016,
+   "pass": -0.0
+  },
+  "2|mid|far|le120": {
+   "pass": -0.0023,
+   "run": 0.0002
+  },
+  "3|mid|far|le120": {
+   "pass": -0.0019,
+   "run": 0.0
+  },
+  "3|long|far|le30": {
+   "pass": -0.0011,
+   "run": -0.0005
+  },
+  "3|mid|close|le120": {
+   "pass": -0.0027,
+   "run": 0.0024
+  },
+  "4|long|close|le60": {
+   "punt": -0.0251,
+   "field_goal": -0.0245
+  },
+  "1|long|far|le30": {
+   "kneel": -0.8176,
+   "run": -0.4581,
+   "spike": -0.0009,
+   "pass": -0.0252
+  },
+  "2|long|far|le30": {
+   "pass": -0.0016,
+   "run": -0.0006
+  },
+  "4|long|close|le120": {
+   "pass": -0.0311,
+   "punt": -0.0191,
+   "field_goal": -0.024
+  },
+  "2|mid|close|le120": {
+   "run": 0.0021,
+   "pass": -0.0029,
+   "kneel": 0.0031
+  },
+  "3|short|close|le120": {
+   "run": 0.0051,
+   "pass": 0.0027
+  },
+  "2|long|far|le60": {
+   "pass": -0.0017
+  },
+  "1|long|far|le60": {
+   "pass": -0.076,
+   "run": -0.1929
+  },
+  "3|mid|far|le30": {
+   "pass": -0.0001
+  },
+  "3|long|far|le120": {
+   "run": -0.0006,
+   "pass": -0.0038
+  },
+  "4|long|far|le120": {
+   "pass": -0.0031,
+   "field_goal": -0.0171
+  },
+  "2|mid|far|le60": {
+   "pass": 0.0013,
+   "run": -0.0001
+  },
+  "2|mid|far|le30": {
+   "pass": 0.0
+  },
+  "3|short|far|le30": {
+   "pass": 0.0006
+  },
+  "4|short|far|le30": {
+   "pass": -0.0036
+  },
+  "3|short|far|le120": {
+   "pass": -0.0012,
+   "run": 0.0017
+  },
+  "1|short|far|le120": {
+   "run": 0.0276,
+   "pass": 0.0077
+  },
+  "2|short|far|le60": {
+   "pass": 0.0033
+  },
+  "3|short|far|le60": {
+   "run": -0.0003,
+   "pass": 0.002
+  },
+  "4|short|far|le60": {
+   "pass": -0.0007
+  },
+  "1|mid|close|le120": {
+   "run": 0.0771
+  },
+  "4|mid|close|le30": {
+   "field_goal": -0.0297,
+   "punt": -0.0065
+  },
+  "2|long|close|le60": {
+   "kneel": 0.0005,
+   "pass": -0.0302,
+   "run": -0.0144
+  },
+  "2|mid|td|le120": {
+   "pass": -0.0019,
+   "run": -0.0033
+  },
+  "3|mid|td|le120": {
+   "pass": -0.0119,
+   "run": -0.0066
+  },
+  "3|short|td|le120": {
+   "run": 0.0016,
+   "pass": -0.0003
+  },
+  "2|long|td|le60": {
+   "pass": -0.0322
+  },
+  "3|long|td|le60": {
+   "pass": -0.0138
+  },
+  "4|long|td|le30": {
+   "pass": -0.0291
+  },
+  "4|mid|far|le120": {
+   "pass": -0.0029,
+   "punt": -0.0001,
+   "field_goal": -0.0235
+  },
+  "1|short|close|le120": {
+   "kneel": 0.011,
+   "run": 0.0916
+  },
+  "3|short|close|le30": {
+   "pass": -0.0121,
+   "run": 0.0126
+  },
+  "4|short|far|le120": {
+   "pass": -0.0044,
+   "run": -0.0087
+  },
+  "1|mid|far|le120": {
+   "pass": 0.0061
+  },
+  "1|long|td|le30": {
+   "pass": -0.1939,
+   "spike": 0.0424
+  },
+  "3|mid|close|le30": {
+   "pass": -0.0077
+  },
+  "4|short|close|le30": {
+   "field_goal": -0.019,
+   "punt": -0.0358
+  },
+  "1|long|td|le60": {
+   "pass": -0.0105,
+   "spike": 0.0383
+  },
+  "2|short|td|le60": {
+   "pass": 0.0159
+  },
+  "3|short|td|le60": {
+   "pass": 0.0003
+  },
+  "2|long|td|le30": {
+   "pass": -0.02
+  },
+  "3|long|far|le60": {
+   "pass": -0.0012
+  },
+  "3|short|close|le60": {
+   "pass": -0.0074,
+   "run": 0.0037
+  },
+  "4|short|td|le120": {
+   "pass": -0.0288,
+   "run": -0.0293
+  },
+  "2|short|far|le30": {
+   "pass": -0.0002
+  },
+  "4|mid|far|le30": {
+   "pass": -0.0004
+  },
+  "2|mid|close|le60": {
+   "pass": -0.0055,
+   "run": 0.0084
+  },
+  "3|short|td|le30": {
+   "pass": 0.0064
+  },
+  "3|mid|td|le30": {
+   "pass": 0.0017
+  },
+  "4|mid|td|le30": {
+   "pass": -0.041
+  },
+  "3|mid|far|le60": {
+   "pass": -0.0001
+  },
+  "3|long|td|le30": {
+   "pass": -0.0229
+  },
+  "4|long|far|le60": {
+   "pass": -0.001
+  },
+  "2|mid|td|le60": {
+   "pass": -0.0081
+  },
+  "4|mid|td|le120": {
+   "pass": -0.0483
+  },
+  "4|long|td|le60": {
+   "pass": -0.0442
+  },
+  "2|short|close|le30": {
+   "pass": -0.0109
+  },
+  "2|short|td|le30": {
+   "pass": -0.0101
+  },
+  "4|mid|far|le60": {
+   "pass": 0.0002
+  },
+  "3|mid|td|le60": {
+   "pass": -0.0168
+  },
+  "2|short|close|le60": {
+   "pass": 0.0293,
+   "run": 0.0192
+  },
+  "1|mid|td|le120": {
+   "run": 0.0965
+  },
+  "4|short|td|le30": {
+   "pass": -0.0175
+  },
+  "4|mid|close|le60": {
+   "field_goal": -0.017,
+   "punt": -0.0268
+  },
+  "2|mid|td|le30": {
+   "pass": -0.0132
+  },
+  "4|long|far|le30": {
+   "pass": -0.0006
+  },
+  "1|short|td|le120": {
+   "run": 0.0563
+  }
+ },
+ "fg_rate": {
+  "15": 1.0,
+  "20": 0.989,
+  "25": 0.97,
+  "30": 0.952,
+  "35": 0.918,
+  "40": 0.813,
+  "45": 0.749,
+  "50": 0.722,
+  "55": 0.659,
+  "60": 0.405
+ },
+ "usage": {
+  "4|short|close|le120": {
+   "run": 0.319,
+   "punt": 0.259,
+   "field_goal": 0.252,
+   "pass": 0.17
+  },
+  "1|long|td|le120": {
+   "pass": 0.823,
+   "run": 0.173,
+   "spike": 0.004
+  },
+  "2|short|td|le120": {
+   "pass": 0.687,
+   "run": 0.313
+  },
+  "2|long|td|le120": {
+   "pass": 0.895,
+   "run": 0.105
+  },
+  "3|long|td|le120": {
+   "pass": 0.965,
+   "run": 0.035
+  },
+  "4|long|td|le120": {
+   "pass": 0.78,
+   "punt": 0.122,
+   "run": 0.049,
+   "field_goal": 0.049
+  },
+  "1|long|close|le120": {
+   "run": 0.524,
+   "pass": 0.281,
+   "kneel": 0.194,
+   "spike": 0.001
+  },
+  "2|long|close|le120": {
+   "run": 0.439,
+   "pass": 0.389,
+   "kneel": 0.166,
+   "field_goal": 0.006
+  },
+  "3|mid|close|le60": {
+   "run": 0.417,
+   "pass": 0.306,
+   "kneel": 0.278
+  },
+  "3|long|close|le60": {
+   "kneel": 0.764,
+   "pass": 0.155,
+   "run": 0.08
+  },
+  "4|long|close|le30": {
+   "field_goal": 0.426,
+   "punt": 0.295,
+   "pass": 0.164,
+   "kneel": 0.066,
+   "run": 0.049
+  },
+  "3|long|close|le120": {
+   "pass": 0.605,
+   "run": 0.386,
+   "kneel": 0.01
+  },
+  "4|mid|close|le120": {
+   "punt": 0.455,
+   "field_goal": 0.396,
+   "pass": 0.119,
+   "run": 0.03
+  },
+  "2|short|close|le120": {
+   "run": 0.628,
+   "pass": 0.354,
+   "kneel": 0.018
+  },
+  "1|long|close|le60": {
+   "kneel": 0.439,
+   "pass": 0.374,
+   "run": 0.174,
+   "spike": 0.012
+  },
+  "2|mid|close|le30": {
+   "pass": 0.543,
+   "run": 0.171,
+   "field_goal": 0.143,
+   "kneel": 0.114,
+   "spike": 0.029
+  },
+  "1|long|close|le30": {
+   "kneel": 0.483,
+   "pass": 0.352,
+   "spike": 0.083,
+   "run": 0.058,
+   "field_goal": 0.024
+  },
+  "2|long|close|le30": {
+   "pass": 0.416,
+   "kneel": 0.36,
+   "field_goal": 0.118,
+   "run": 0.093,
+   "spike": 0.012
+  },
+  "3|long|close|le30": {
+   "kneel": 0.372,
+   "pass": 0.314,
+   "field_goal": 0.209,
+   "run": 0.081,
+   "spike": 0.023
+  },
+  "1|long|far|le120": {
+   "pass": 0.794,
+   "run": 0.179,
+   "spike": 0.022,
+   "field_goal": 0.004
+  },
+  "2|long|far|le120": {
+   "pass": 0.858,
+   "run": 0.128,
+   "field_goal": 0.011,
+   "spike": 0.004
+  },
+  "2|short|far|le120": {
+   "pass": 0.748,
+   "run": 0.252
+  },
+  "2|mid|far|le120": {
+   "pass": 0.745,
+   "run": 0.248,
+   "kneel": 0.007
+  },
+  "3|mid|far|le120": {
+   "pass": 0.849,
+   "run": 0.151
+  },
+  "2|long|far|le60": {
+   "pass": 0.842,
+   "run": 0.123,
+   "field_goal": 0.035
+  },
+  "3|mid|close|le120": {
+   "pass": 0.559,
+   "run": 0.419,
+   "kneel": 0.022
+  },
+  "4|long|close|le60": {
+   "punt": 0.512,
+   "field_goal": 0.256,
+   "pass": 0.163,
+   "kneel": 0.047,
+   "run": 0.023
+  },
+  "1|long|far|le30": {
+   "pass": 0.453,
+   "run": 0.279,
+   "kneel": 0.128,
+   "spike": 0.128,
+   "field_goal": 0.012
+  },
+  "2|long|far|le30": {
+   "pass": 0.646,
+   "run": 0.229,
+   "field_goal": 0.104,
+   "spike": 0.021
+  },
+  "4|long|close|le120": {
+   "punt": 0.628,
+   "field_goal": 0.283,
+   "pass": 0.089
+  },
+  "2|mid|close|le120": {
+   "run": 0.728,
+   "pass": 0.22,
+   "kneel": 0.053
+  },
+  "3|short|close|le120": {
+   "run": 0.693,
+   "pass": 0.302,
+   "field_goal": 0.005
+  },
+  "1|long|far|le60": {
+   "pass": 0.653,
+   "run": 0.263,
+   "spike": 0.051,
+   "kneel": 0.025,
+   "field_goal": 0.008
+  },
+  "3|long|far|le120": {
+   "pass": 0.897,
+   "run": 0.089,
+   "field_goal": 0.007,
+   "kneel": 0.007
+  },
+  "4|long|far|le120": {
+   "pass": 0.723,
+   "field_goal": 0.157,
+   "punt": 0.072,
+   "run": 0.048
+  },
+  "2|mid|far|le60": {
+   "pass": 0.63,
+   "run": 0.37
+  },
+  "3|short|far|le120": {
+   "pass": 0.712,
+   "run": 0.288
+  },
+  "4|mid|far|le120": {
+   "pass": 0.561,
+   "field_goal": 0.175,
+   "punt": 0.158,
+   "run": 0.105
+  },
+  "1|short|far|le120": {
+   "pass": 0.613,
+   "run": 0.387
+  },
+  "3|short|far|le60": {
+   "pass": 0.524,
+   "run": 0.476
+  },
+  "1|mid|close|le120": {
+   "run": 0.594,
+   "kneel": 0.219,
+   "pass": 0.188
+  },
+  "4|mid|close|le30": {
+   "field_goal": 0.634,
+   "punt": 0.244,
+   "pass": 0.098,
+   "run": 0.024
+  },
+  "2|long|close|le60": {
+   "kneel": 0.669,
+   "pass": 0.26,
+   "run": 0.071
+  },
+  "2|mid|td|le120": {
+   "pass": 0.81,
+   "run": 0.19
+  },
+  "3|mid|td|le120": {
+   "pass": 0.864,
+   "run": 0.136
+  },
+  "3|short|td|le120": {
+   "pass": 0.53,
+   "run": 0.47
+  },
+  "2|long|td|le60": {
+   "pass": 0.922,
+   "run": 0.078
+  },
+  "3|long|td|le60": {
+   "pass": 0.838,
+   "run": 0.162
+  },
+  "4|mid|td|le120": {
+   "pass": 0.815,
+   "field_goal": 0.074,
+   "punt": 0.074,
+   "run": 0.037
+  },
+  "1|short|close|le120": {
+   "run": 0.571,
+   "kneel": 0.381,
+   "pass": 0.048
+  },
+  "2|mid|close|le60": {
+   "pass": 0.457,
+   "run": 0.413,
+   "kneel": 0.13
+  },
+  "3|mid|close|le30": {
+   "pass": 0.528,
+   "field_goal": 0.194,
+   "kneel": 0.139,
+   "run": 0.139
+  },
+  "3|short|close|le30": {
+   "pass": 0.467,
+   "run": 0.267,
+   "field_goal": 0.167,
+   "spike": 0.067,
+   "kneel": 0.033
+  },
+  "4|short|far|le120": {
+   "pass": 0.621,
+   "run": 0.31,
+   "punt": 0.052,
+   "field_goal": 0.017
+  },
+  "1|mid|far|le120": {
+   "pass": 0.81,
+   "run": 0.19
+  },
+  "1|long|td|le30": {
+   "pass": 0.678,
+   "spike": 0.289,
+   "run": 0.033
+  },
+  "4|short|close|le30": {
+   "field_goal": 0.406,
+   "punt": 0.25,
+   "pass": 0.188,
+   "run": 0.156
+  },
+  "1|long|td|le60": {
+   "pass": 0.847,
+   "spike": 0.093,
+   "run": 0.059
+  },
+  "3|short|td|le60": {
+   "pass": 0.773,
+   "run": 0.227
+  },
+  "2|long|td|le30": {
+   "pass": 0.917,
+   "run": 0.083
+  },
+  "3|long|far|le60": {
+   "pass": 0.654,
+   "run": 0.231,
+   "field_goal": 0.115
+  },
+  "4|long|far|le60": {
+   "pass": 0.783,
+   "run": 0.087,
+   "field_goal": 0.043,
+   "punt": 0.043,
+   "kneel": 0.043
+  },
+  "3|short|close|le60": {
+   "run": 0.467,
+   "pass": 0.433,
+   "kneel": 0.1
+  },
+  "4|short|td|le120": {
+   "pass": 0.733,
+   "run": 0.267
+  },
+  "2|short|close|le60": {
+   "pass": 0.48,
+   "run": 0.32,
+   "kneel": 0.2
+  },
+  "3|short|td|le30": {
+   "pass": 0.85,
+   "run": 0.1,
+   "spike": 0.05
+  },
+  "3|long|td|le30": {
+   "pass": 0.957,
+   "run": 0.043
+  },
+  "2|mid|td|le60": {
+   "pass": 1.0
+  },
+  "4|long|td|le60": {
+   "pass": 1.0
+  },
+  "4|mid|close|le60": {
+   "field_goal": 0.357,
+   "punt": 0.286,
+   "kneel": 0.143,
+   "run": 0.107,
+   "pass": 0.107
+  }
+ },
+ "pass_odds": {
+  "short": {
+   "caught": 0.66,
+   "yds": 8.9,
+   "sack": 0.0
+  },
+  "deep": {
+   "caught": 0.323,
+   "yds": 26.5,
+   "sack": 0.0
+  }
+ }
+}
