@@ -195,7 +195,7 @@ export class Game {
 
     // run / pass call object: {family, side, target?, depth?, oob?}
     const m = this.matchOf(call, real);
-    if (real && (m === "full" || m === "target")) {
+    if (real && m === "full") {
       this.idx++;
       const p = real;
       this.state.seconds = p.seconds;
@@ -208,7 +208,7 @@ export class Game {
       entry = {
         cat: p.cat, matched: true, match: m, desc: p.desc, delta, wp: this.wp,
         seconds: p.seconds, scoreDiff: p.score_diff,
-        grade: delta - this.expected(call.family, before) - (m === "target" ? 0.01 : 0),
+        grade: delta - this.expected(call.family, before),
         realPlay: p,
       };
       this.log.push(entry);
@@ -233,7 +233,7 @@ export class Game {
         desc = "Driven toward the sideline — tackled in bounds. The clock keeps bleeding.";
         delta -= 0.01;
       } else {
-        const complete = Math.random() < 0.55;
+        const complete = Math.random() < (routeDepth(call.depth ?? "short") === "deep" ? 0.35 : 0.62);
         const deep = routeDepth(call.depth ?? "short") === "deep";
         if (complete) {
           const yds = deep ? 14 + Math.floor(Math.random() * 18) : 5 + Math.floor(Math.random() * 9);

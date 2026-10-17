@@ -1,6 +1,6 @@
 /* Final Drive — game UI (broadcast-style, competitor-grade call dock) */
-import { Game, dailyPuzzle, shareText, CAT_LABEL, GRADE_ICON, REAL_ICON, ROUTES, ROUTE_NAME, routeDepth } from "./game.js?v=9";
-import { createField } from "./field.js?v=9";
+import { Game, dailyPuzzle, shareText, CAT_LABEL, GRADE_ICON, REAL_ICON, ROUTES, ROUTE_NAME, routeDepth } from "./game.js?v=10";
+import { createField } from "./field.js?v=10";
 
 let PUZZLES, BASELINES, STORIES, PROFILES;
 const $ = (sel) => document.querySelector(sel);
@@ -10,10 +10,10 @@ const FAM = { run: "Run", pass: "Pass" };
 
 async function loadData() {
   const [p, b, s, pl] = await Promise.all([
-    fetch("data/puzzles.json?v=9", { cache: "reload" }).then(r => r.json()),
-    fetch("data/baselines.json?v=9", { cache: "reload" }).then(r => r.json()),
-    fetch("data/stories.json?v=9", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
-    fetch("data/players.json?v=9", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
+    fetch("data/puzzles.json?v=10", { cache: "reload" }).then(r => r.json()),
+    fetch("data/baselines.json?v=10", { cache: "reload" }).then(r => r.json()),
+    fetch("data/stories.json?v=10", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
+    fetch("data/players.json?v=10", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
   ]);
   PUZZLES = p; BASELINES = b; STORIES = s; PROFILES = pl;
 }
@@ -109,13 +109,9 @@ function updateSituation(puzzle, game) {
 
 /* ---------- the call dock ---------- */
 function familiesAvailable(puzzle, game) {
-  // which families the real script can reward (with side variants)
-  const fams = new Set();
-  for (let i = game.idx; i < puzzle.plays.length; i++) {
-    const c = puzzle.plays[i].call;
-    if (c) fams.add(c.family);
-  }
-  return ["run", "pass"].filter(f => fams.has(f));
+  // the full playbook is always available (like the real thing); we don't
+  // hide families based on what is left in the drive script
+  return ["run", "pass"];
 }
 
 function runPassRows(puzzle, game, fam) {
@@ -180,7 +176,7 @@ function drawDock(puzzle, game) {
       drawDock(puzzle, game);
     });
     dock.querySelectorAll(".side").forEach(b => b.onclick = () => onCall(puzzle, game, { family: "run", base: "Run", side: b.dataset.side }));
-    dock.querySelectorAll(".spec").forEach(b => b.onclick = () => onCall(puzzle, game, { special: b.dataset.spec }));
+    wireSpecials(puzzle, game);
     dock.querySelectorAll(".segb").forEach(b => b.onclick = () => {
       game.tempo = b.dataset.tempo;
       dock.querySelectorAll(".segb").forEach(x => {
@@ -201,10 +197,16 @@ function drawDock(puzzle, game) {
       html += `<button class="btn act primary side" data-side="${sd.sd}">${sd.label}</button>`;
     html += `</div></div>`;
   }
-  html += `</div><button class="btn ghost back">◀ Back</button>`;
+  html += `</div><div class="specrow">${dock.querySelector(".specrow")?.innerHTML || ""}</div>
+  <button class="btn ghost back">◀ Back</button>`;
   dock.innerHTML = html;
+  wireSpecials(puzzle, game);
   dock.querySelectorAll(".side").forEach(b => b.onclick = () => onCall(puzzle, game, { family: "run", base: "Run", side: b.dataset.side }));
   dock.querySelector(".back").onclick = () => { ui.step = "family"; drawDock(puzzle, game); };
+}
+
+function wireSpecials(puzzle, game) {
+  document.querySelectorAll(".spec").forEach(b => b.onclick = () => onCall(puzzle, game, { special: b.dataset.spec }));
 }
 
 function drawPassPainter(puzzle, game) {
@@ -226,6 +228,7 @@ function drawPassPainter(puzzle, game) {
     <button class="btn gold chip ${ui.pass.oob ? "on" : ""}" data-mod="oob">Get out of bounds <small>no guarantee</small></button>
   </div>
   <button id="throw" class="btn primary big">Throw it</button>
+  <div class="specrow">${$("#dock").querySelector(".specrow")?.innerHTML || ""}</div>
   <button class="btn ghost back">◀ Back</button>`;
   const dock = $("#dock");
   dock.innerHTML = html;
@@ -250,6 +253,7 @@ function drawPassPainter(puzzle, game) {
     onCall(puzzle, game, { family: "pass", base: depth === "deep" ? "Deep pass" : "Quick pass", side: "middle", target: ui.pass.target, depth, oob: ui.pass.oob });
   };
   dock.querySelector(".back").onclick = () => { ui.step = "family"; drawDock(puzzle, game); };
+  wireSpecials(puzzle, game);
   game._field.setRoutes(ui.pass.routes);
 }
 
@@ -317,6 +321,20 @@ async function onCall(puzzle, game, call) {
   else if (game.pendingTry) drawDock(puzzle, game);
 }
 
+function whyText(entry, game) {
+  if (entry.neutral) return "";
+  const d = (entry.realPlay?.desc || entry.desc || "").toUpperCase();
+  if (entry.cat === "pass") {
+    if (d.includes("PUSHED OB") || d.includes("RUNS OB")) return "Out of bounds catch — clock stops.";
+    if (d.includes("DEEP") || routeDepth(entry.realPlay?.call?.depth ?? "short") === "deep") return "A deep shot: low odds, big payoff.";
+    if (d.includes("INCOMPLETE")) return "Incomplete — the clock stops, but the down is gone.";
+    return "Short pass in bounds — yards, but the clock keeps running.";
+  }
+  if (entry.cat === "run") return "A run in bounds costs about 40 seconds of clock.";
+  if (entry.cat === "field_goal") return d.includes("GOOD") ? "Points on the board." : "The kick dies — possession gone.";
+  return "";
+}
+
 function appendLog(entry, prev, game) {
   const el = document.createElement("div");
   el.className = "play-entry";
@@ -334,7 +352,8 @@ function appendLog(entry, prev, game) {
         <span class="call">${CAT_LABEL[entry.cat] || entry.cat}${matchTag}</span>
         <span class="delta">${pct} pp</span>
       </div>
-      <div class="desc">${entry.desc}</div>`;
+      <div class="desc">${entry.desc}</div>
+      ${whyText(entry, game) ? `<div class="why">${whyText(entry, game)}</div>` : ""}`;
     if (prev) {
       const yds = prev.yardline - game.state.yardline;
       const d = entry.desc.toUpperCase();
