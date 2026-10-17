@@ -1,6 +1,6 @@
 /* Final Drive — game engine & UI logic */
 export const CAT_LABEL = {
-  pass: "Pass", run: "Run", spike: "Spike it", kneel: "Kneel",
+  pass: "Pass", run: "Run", trick: "Trick play", spike: "Spike it", kneel: "Kneel",
   field_goal: "Field goal", punt: "Punt", timeout: "Timeout",
 };
 export const GRADE_ICON = ["🟢", "🟡", "🟠", "🔴"];
@@ -73,6 +73,7 @@ export class Game {
   matchOf(call, real) {
     if (!call || !real?.call) return "none";
     if (call.family !== real.call.family) return "none";
+    if (call.family === "trick") return "full";
     if (call.family === "run") return call.side === real.call.side ? "full" : "family";
     // pass
     if (call.target && call.target === real.call.target) {
@@ -232,6 +233,20 @@ export class Game {
         this.state.down++;
         desc = "Driven toward the sideline — tackled in bounds. The clock keeps bleeding.";
         delta -= 0.01;
+      } else if (call.hail) {
+        const complete = Math.random() < 0.15;
+        if (complete) {
+          const yds = 25 + Math.floor(Math.random() * 22);
+          this.state.yardline = Math.max(1, this.state.yardline - yds);
+          this.state.seconds = Math.max(0, this.state.seconds - 6);
+          this.state.down++;
+          desc = `HAIL MARY... CAUGHT! ${yds} yards — chaos!`;
+          delta = Math.max(delta, 0.12);
+        } else {
+          this.state.down++;
+          desc = "Hail Mary falls incomplete as the clock bleeds.";
+          delta = Math.min(delta, -0.02);
+        }
       } else {
         const complete = Math.random() < (routeDepth(call.depth ?? "short") === "deep" ? 0.35 : 0.62);
         const deep = routeDepth(call.depth ?? "short") === "deep";
@@ -246,6 +261,13 @@ export class Game {
           desc = deep ? "Shot downfield — incomplete, clock stops." : "Pass incomplete — clock stops.";
         }
       }
+    } else if (family === "trick") {
+      const yds = Math.random() < 0.5 ? 6 + Math.floor(Math.random() * 12) : -3 + Math.floor(Math.random() * 6);
+      this.state.yardline = Math.max(1, this.state.yardline - yds);
+      this.state.seconds = Math.max(0, this.state.seconds - 12);
+      this.state.down++;
+      desc = yds > 0 ? `The trick play catches the defense sleeping — ${yds} yards!` : "The defense wasn't fooled — trick play snuffed out.";
+      delta = yds > 0 ? Math.max(delta, 0.03) : Math.min(delta, -0.02);
     } else {
       const yds = 2 + Math.floor(Math.random() * 5);
       this.state.yardline = Math.max(1, this.state.yardline - yds);

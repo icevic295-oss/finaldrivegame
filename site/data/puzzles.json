@@ -1796,11 +1796,9 @@
     "wp_before": 0.293,
     "clock_before": 42,
     "call": {
-     "family": "pass",
-     "base": "Quick pass",
-     "side": "middle",
-     "target": "WR1",
-     "depth": "short"
+     "family": "trick",
+     "base": "Trick play",
+     "side": "middle"
     }
    }
   ],
@@ -2481,11 +2479,9 @@
     "wp_before": 0.915,
     "clock_before": 62,
     "call": {
-     "family": "pass",
-     "base": "Deep pass",
-     "side": "strong",
-     "target": "WR1",
-     "depth": "deep"
+     "family": "trick",
+     "base": "Trick play",
+     "side": "middle"
     }
    },
    {
@@ -3059,11 +3055,9 @@
     "wp_before": 0.422,
     "clock_before": 38,
     "call": {
-     "family": "pass",
-     "base": "Quick pass",
-     "side": "middle",
-     "target": "WR1",
-     "depth": "short"
+     "family": "trick",
+     "base": "Trick play",
+     "side": "middle"
     }
    },
    {
@@ -4028,11 +4022,9 @@
     "wp_before": 0.56,
     "clock_before": 112,
     "call": {
-     "family": "pass",
-     "base": "Quick pass",
-     "side": "strong",
-     "target": "WR1",
-     "depth": "short"
+     "family": "trick",
+     "base": "Trick play",
+     "side": "middle"
     }
    },
    {
@@ -4048,11 +4040,9 @@
     "wp_before": 0.547,
     "clock_before": 108,
     "call": {
-     "family": "pass",
-     "base": "Quick pass",
-     "side": "strong",
-     "target": "WR1",
-     "depth": "short"
+     "family": "trick",
+     "base": "Trick play",
+     "side": "middle"
     }
    },
    {

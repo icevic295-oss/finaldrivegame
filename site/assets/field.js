@@ -9,7 +9,7 @@ const el = (tag, attrs = {}, text) => {
   return e;
 };
 
-export function createField(container, { posteam, defteam, numbers = {} }) {
+export function createField(container, { posteam, defteam, numbers = {}, colors = {} }) {
   container.innerHTML = "";
   const W = 360, H = 620, EZ = 78;                 // end zone height
   const T = H - EZ - 8, B = EZ + 8;                // goal line tops
@@ -24,10 +24,10 @@ export function createField(container, { posteam, defteam, numbers = {} }) {
   }
 
   // end zones: top = defense (red), bottom = offense (blue)
-  svg.appendChild(el("rect", { x: 0, y: 0, width: W, height: EZ, rx: 14, fill: "#3d1220" }));
+  svg.appendChild(el("rect", { x: 0, y: 0, width: W, height: EZ, rx: 14, fill: colors.def || "#3d1220" }));
   const ezT = el("text", { x: W / 2, y: EZ / 2 + 9, class: "ez-text" }, defteam);
   svg.appendChild(ezT);
-  svg.appendChild(el("rect", { x: 0, y: H - EZ, width: W, height: EZ, rx: 14, fill: "#132b3d" }));
+  svg.appendChild(el("rect", { x: 0, y: H - EZ, width: W, height: EZ, rx: 14, fill: colors.post || "#132b3d" }));
   const ezB = el("text", { x: W / 2, y: H - EZ / 2 + 9, class: "ez-text" }, posteam);
   svg.appendChild(ezB);
   svg.appendChild(el("rect", { x: 0, y: 0, width: W, height: H, rx: 14, fill: "none", stroke: "#ffffff22", "stroke-width": 2 }));

@@ -2,21 +2,22 @@
 import { Game, dailyPuzzle, shareText, CAT_LABEL, GRADE_ICON, REAL_ICON, ROUTES, ROUTE_NAME, routeDepth } from "./game.js?v=10";
 import { createField } from "./field.js?v=10";
 
-let PUZZLES, BASELINES, STORIES, PROFILES, PERC;
+let PUZZLES, BASELINES, STORIES, PROFILES, PERC, TEAMS;
 const $ = (sel) => document.querySelector(sel);
 const fmtClock = (s) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, s) % 60).padStart(2, "0")}`;
 const QTR = { 1: "1ST", 2: "2ND", 3: "3RD", 4: "4TH", 5: "OT" };
-const FAM = { run: "Run", pass: "Pass" };
+const FAM = { run: "Run", pass: "Pass", trick: "Trick" };
 
 async function loadData() {
-  const [p, b, s, pl, pc] = await Promise.all([
+  const [p, b, s, pl, pc, tm] = await Promise.all([
     fetch("data/puzzles.json?v=10", { cache: "reload" }).then(r => r.json()),
     fetch("data/baselines.json?v=10", { cache: "reload" }).then(r => r.json()),
     fetch("data/stories.json?v=10", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
     fetch("data/players.json?v=10", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
     fetch("data/percentiles.json", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
+    fetch("data/teams.json", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
   ]);
-  PUZZLES = p; BASELINES = b; STORIES = s; PROFILES = pl; PERC = pc;
+  PUZZLES = p; BASELINES = b; STORIES = s; PROFILES = pl; PERC = pc; TEAMS = tm;
 }
 
 function loadStats() {
@@ -69,12 +70,12 @@ function renderGame(puzzle, game, survivor = false, runLen = 0) {
   $("#app").innerHTML = `
   <section class="scoreboard">
     <div class="sb-main">
-      <div class="sb-team"><span class="sb-abbr">${g.posteam}</span><span class="sb-score" id="sb-pos">${s.posteam_score}</span></div>
+      <div class="sb-team"><span class="sb-abbr" style="color:${tc(g.posteam)}">${g.posteam}</span><span class="sb-score" id="sb-pos">${s.posteam_score}</span></div>
       <div class="sb-mid">
         <span class="sb-clock" id="sb-clock">${fmtClock(s.seconds)}</span>
         <span class="sb-qtr">${QTR[s.qtr] || ""}</span>
       </div>
-      <div class="sb-team"><span class="sb-abbr">${g.defteam}</span><span class="sb-score" id="sb-def">${s.defteam_score}</span></div>
+      <div class="sb-team"><span class="sb-abbr" style="color:${tc(g.defteam)}">${g.defteam}</span><span class="sb-score" id="sb-def">${s.defteam_score}</span></div>
     </div>
     <div class="sb-sub">
       <span class="sb-wp">WIN PROB <b id="sb-wp">${Math.round(game.wp * 100)}%</b></span>
@@ -94,7 +95,32 @@ function renderGame(puzzle, game, survivor = false, runLen = 0) {
   const numbers = {};
   for (const [slot, prof] of Object.entries(puzzle.participants || {}))
     if (slot !== "QB" && prof?.no) numbers[slot] = String(prof.no);
-  const field = createField($("#fieldbox"), { posteam: g.posteam, defteam: g.defteam, numbers });
+  const tc = (abbr) => (TEAMS && TEAMS[abbr] ? TEAMS[abbr].primary : null);
+  $("#app").innerHTML = `
+  <section class="scoreboard">
+    <div class="sb-main">
+      <div class="sb-team"><span class="sb-abbr" style="color:${tc(g.posteam) || "inherit"}">${g.posteam}</span><span class="sb-score" id="sb-pos">${s.posteam_score}</span></div>
+      <div class="sb-mid">
+        <span class="sb-clock" id="sb-clock">${fmtClock(s.seconds)}</span>
+        <span class="sb-qtr">${QTR[s.qtr] || ""}</span>
+      </div>
+      <div class="sb-team"><span class="sb-abbr" style="color:${tc(g.defteam) || "inherit"}">${g.defteam}</span><span class="sb-score" id="sb-def">${s.defteam_score}</span></div>
+    </div>
+    <div class="sb-sub">
+      <span class="sb-wp">WIN PROB <b id="sb-wp">${Math.round(game.wp * 100)}%</b></span>
+      <span class="sb-wpbar"><i id="sb-wpfill" style="width:${game.wp * 100}%"></i></span>
+    </div>
+  </section>
+  <div class="gamegrid">
+    <div class="gameleft">
+      <section id="fieldbox" class="fieldbox"></section>
+      ${story ? `<details class="card storycard"><summary>The Story — ${g.season} W${g.week}</summary><p>${story}</p></details>` : ""}
+      <section id="situation" class="card situation-line"></section>
+      <section id="log" class="log"></section>
+    </div>
+    <aside id="dock" class="card dock"></aside>
+  </div>
+  <div id="end"></div>`;
   game._field = field;
   field.onRecvTap((slot, kind) => {
     if (kind === "info") return showPlayerCard(puzzle, game, slot);
@@ -135,9 +161,10 @@ function updateSituation(puzzle, game) {
 
 /* ---------- the call dock ---------- */
 function familiesAvailable(puzzle, game) {
-  // the full playbook is always available (like the real thing); we don't
-  // hide families based on what is left in the drive script
-  return ["run", "pass"];
+  // full playbook always available; Trick appears when the drive script has one
+  const fams = new Set(["run", "pass"]);
+  for (const pl of puzzle.plays) if (pl.call?.family === "trick") fams.add("trick");
+  return [...fams];
 }
 
 function runPassRows(puzzle, game, fam) {
@@ -191,10 +218,13 @@ function drawDock(puzzle, game) {
     html += `<button class="btn act gold spec" data-spec="timeout" ${st.timeouts > 0 ? "" : "disabled"}>Timeout <small>${st.timeouts} left</small></button>`;
     if (st.timeouts > 0 && st.seconds > 20 && fgDist <= 55)
       html += `<button class="btn act gold spec" data-spec="rundown">Run it down <small>timeout at 0:03</small></button>`;
+    if (st.seconds <= 30 && st.yardline >= 30)
+      html += `<button class="btn act gold spec" data-hail="1">🕊 Hail Mary</button>`;
     html += `</div>`;
     dock.innerHTML = html;
     dock.querySelectorAll(".fam").forEach(b => b.onclick = () => {
       const f = b.dataset.fam;
+      if (f === "trick") { onCall(puzzle, game, { family: "trick", base: "Trick play", side: "middle" }); return; }
       if (ui.step === "family" && ui.fam === f) { ui.fam = null; drawDock(puzzle, game); return; }  // toggle closed
       ui.fam = f;
       ui.step = f === "pass" ? "pass" : "family";
@@ -233,6 +263,7 @@ function drawDock(puzzle, game) {
 
 function wireSpecials(puzzle, game) {
   document.querySelectorAll(".spec").forEach(b => b.onclick = () => onCall(puzzle, game, { special: b.dataset.spec }));
+  document.querySelectorAll("[data-hail]").forEach(b => b.onclick = () => onCall(puzzle, game, { family: "pass", hail: true, base: "Deep pass", side: "middle", depth: "deep" }));
 }
 
 function drawPassPainter(puzzle, game) {

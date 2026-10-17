@@ -13,7 +13,7 @@ for (const p of puzzles) {
   for (const pl of p.plays) assert(pl.desc && pl.seconds >= 0, `${p.slug} play fields`);
   for (const pl of p.plays) {
     if (pl.call) {
-      assert(["run", "pass"].includes(pl.call.family), `${p.slug} call family`);
+      assert(["run", "pass", "trick"].includes(pl.call.family), `${p.slug} call family`);
       if (pl.call.family === "pass") assert(pl.call.target && pl.call.depth, `${p.slug} pass call fields`);
     }
     if (pl.try) assert(["xp", "two"].includes(pl.try.type) && typeof pl.try.good === "boolean", `${p.slug} try fields`);

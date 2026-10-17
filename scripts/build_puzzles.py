@@ -75,6 +75,9 @@ def slot_for_name(name: str) -> str:
 def call_descriptor(p) -> dict | None:
     """Map a pbp play to (family, base, side, target_slot, depth)."""
     import re
+    dl = str(p.get("desc", "")).lower()
+    if "flea flicker" in dl or "reverse" in dl or ("lateral" in dl and "pass" in dl):
+        return {"family": "trick", "base": "Trick play", "side": "middle"}
     if p["play_type"] == "run":
         loc = p.get("run_location")
         side = {"left": "strong", "right": "weak", "middle": "middle"}.get(loc, "middle")
