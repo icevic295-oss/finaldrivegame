@@ -214,3 +214,7 @@ footer.site a { color: var(--muted); }
 .pill.streak { background: #2a1f08; border-color: #4a3c14; color: var(--gold); }
 .rcv small { line-height: 1.3; }
 .why { color: var(--gold); font-size: 12.5px; margin-top: 3px; opacity: .9; }
+
+.dock-end { text-align: center; padding: 8px 4px; }
+.dock-end h2 { margin: 0 0 6px; font-size: 19px; }
+.dock-end p { color: var(--muted); font-size: 14px; margin: 0 0 12px; }

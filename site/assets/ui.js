@@ -420,7 +420,13 @@ const fmtExp = (x) => `${x >= 0 ? "+" : ""}${(x * 100).toFixed(1)}pp`;
 
 function renderEnd(puzzle, game) {
   const surv = !!game._survivor;
-  $("#dock").innerHTML = "";
+  $("#dock").innerHTML = `
+    <div class="dock-end">
+      <h2>Drive over 🏁</h2>
+      <p>${game.won ? "You took the lead —" : "The drive came up short —"} your results are just below ⬇</p>
+      <button id="seeResult" class="btn primary">View my result</button>
+    </div>`;
+  $("#seeResult").onclick = () => $("#end").scrollIntoView({ behavior: "smooth" });
   const stt = loadStats();
   stt.res[puzzle.slug] = game.won ? "W" : "L";
   const slugs = Object.keys(stt.res);
