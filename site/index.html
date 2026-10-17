@@ -23,6 +23,7 @@
     <a href="how-to-play.html">How to play</a>
     <a href="what-is-a-two-minute-drill.html">The tactics</a>
     <a href="index.html?mode=unlimited">Unlimited</a>
+    <a href="index.html?mode=survivor">🔥 Survivor</a>
   </nav>
 </header>
 <main><div id="app">
@@ -39,7 +40,7 @@
 <script type="module">
   import { runGame } from "./assets/ui.js?v=10";
   const params = new URLSearchParams(location.search);
-  const mode = params.get("mode") === "unlimited" ? "unlimited" : "daily";
+  const mode = params.get("mode") || "daily";
   const slug = params.get("slug");
   try {
     await runGame({ mode, slug });

@@ -2,20 +2,21 @@
 import { Game, dailyPuzzle, shareText, CAT_LABEL, GRADE_ICON, REAL_ICON, ROUTES, ROUTE_NAME, routeDepth } from "./game.js?v=10";
 import { createField } from "./field.js?v=10";
 
-let PUZZLES, BASELINES, STORIES, PROFILES;
+let PUZZLES, BASELINES, STORIES, PROFILES, PERC;
 const $ = (sel) => document.querySelector(sel);
 const fmtClock = (s) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, s) % 60).padStart(2, "0")}`;
 const QTR = { 1: "1ST", 2: "2ND", 3: "3RD", 4: "4TH", 5: "OT" };
 const FAM = { run: "Run", pass: "Pass" };
 
 async function loadData() {
-  const [p, b, s, pl] = await Promise.all([
+  const [p, b, s, pl, pc] = await Promise.all([
     fetch("data/puzzles.json?v=10", { cache: "reload" }).then(r => r.json()),
     fetch("data/baselines.json?v=10", { cache: "reload" }).then(r => r.json()),
     fetch("data/stories.json?v=10", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
     fetch("data/players.json?v=10", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
+    fetch("data/percentiles.json", { cache: "reload" }).then(r => r.json()).catch(() => ({})),
   ]);
-  PUZZLES = p; BASELINES = b; STORIES = s; PROFILES = pl;
+  PUZZLES = p; BASELINES = b; STORIES = s; PROFILES = pl; PERC = pc;
 }
 
 function loadStats() {
@@ -27,17 +28,42 @@ function saveStats(st) { try { localStorage.setItem("fd:stats", JSON.stringify(s
 export async function runGame({ mode, slug }) {
   await loadData();
   let puzzle = slug ? PUZZLES.find(p => p.slug === slug) : null;
-  if (!puzzle) puzzle = mode === "unlimited"
+  if (!puzzle) puzzle = (mode === "unlimited" || mode === "survivor")
     ? PUZZLES[Math.floor(Math.random() * PUZZLES.length)]
     : dailyPuzzle(PUZZLES).puzzle;
   const game = new Game(puzzle, BASELINES);
   const g = puzzle.game;
   document.title = `${g.away} @ ${g.home} — Final Drive`;
-  renderGame(puzzle, game);
+  renderGame(puzzle, game, mode === "survivor", 0);
 }
 
 /* ---------- the whole game on one screen, straight on load ---------- */
-function renderGame(puzzle, game) {
+function percentileOf(puzzle, game) {
+  const dist = PERC && PERC[puzzle.slug];
+  if (!dist || !dist.length) return null;
+  const below = dist.filter(g => g < game.totalGrade).length;
+  return Math.max(1, Math.round(100 * below / dist.length));
+}
+
+function coachProfile(game) {
+  const calls = game.log.filter(l => !l.neutral && l.cat !== "field_goal" && l.cat !== "punt");
+  const passRate = calls.length ? calls.filter(c => c.cat === "pass").length / calls.length : 0;
+  const oob = game.log.some(l => l.cat === "pass" && /out of bounds/i.test(l.desc || ""));
+  const toUsed = game.log.some(l => l.cat === "timeout" || (l.desc || "").includes("Ran the clock down"));
+  const milked = game.tempo === "milk" || game.tempo === "huddle";
+  const fgAttempt = game.log.some(l => l.cat === "field_goal");
+  if (passRate >= 0.85 && oob) return { name: "The Sideline Hunter", note: "Every throw is aimed at the boundary — clock management as a weapon." };
+  if (passRate >= 0.8) return { name: "The Gunslinger", note: "You live on the edge — every snap is a throw, consequences later." };
+  if (passRate <= 0.3 && fgAttempt) return { name: "The Pragmatist", note: "Run it, kick it, take the points. Style is for other people." };
+  if (passRate <= 0.34) return { name: "Ground & Pound", note: "You trust the run game in crunch time. Controversial, but yours." };
+  if (milked && toUsed) return { name: "The Clock Surgeon", note: "You treat the play clock like a surgical instrument." };
+  if (toUsed) return { name: "By The Book", note: "Timeouts when the chart says, routes when it doesn't." };
+  if (!toUsed && passRate > 0.5) return { name: "Ice Veins", note: "You never blinked — no timeout, no panic, just plays." };
+  return { name: "Field General", note: "Balanced, calm, and in control of the clock." };
+}
+
+function renderGame(puzzle, game, survivor = false, runLen = 0) {
+  game._survivor = survivor; game._survivorRun = runLen;
   const g = puzzle.game, s = puzzle.start;
   const story = STORIES[puzzle.slug];
   $("#app").innerHTML = `
@@ -393,6 +419,7 @@ function reviewTable(entry, game) {
 const fmtExp = (x) => `${x >= 0 ? "+" : ""}${(x * 100).toFixed(1)}pp`;
 
 function renderEnd(puzzle, game) {
+  const surv = !!game._survivor;
   $("#dock").innerHTML = "";
   const stt = loadStats();
   stt.res[puzzle.slug] = game.won ? "W" : "L";
@@ -401,7 +428,8 @@ function renderEnd(puzzle, game) {
   for (let i = slugs.length - 1; i >= 0; i--) { if (stt.res[slugs[i]] === "W") stt.streak++; else break; }
   stt.best = Math.max(stt.best || 0, stt.streak);
   saveStats(stt);
-  const style = game.coachStyle();
+  const style = coachProfile(game);
+  const pct = percentileOf(puzzle, game);
   const grades = game.log.filter(l => !l.neutral).map(l => GRADE_ICON[Game.gradeIndex(l.grade)]).join("");
   const g = puzzle.game;
   const realRow = REAL_ICON[puzzle.result] ?? puzzle.result;
@@ -420,13 +448,13 @@ function renderEnd(puzzle, game) {
       <div><span class="k">Streak</span><span class="v">🔥 ${stt.streak} (best ${stt.best})</span></div>
     </div>
     <div class="style">
-      <h3>Your style: ${style.name}</h3>
+      <h3>Your style: ${style.name} ${pct !== null ? `· <span class="gold-t">better than ${pct}% of coached drives</span>` : ""}</h3>
       <p>${style.note}</p>
     </div>
     <div class="end-acts">
       <button id="share" class="btn primary">📋 Copy share card</button>
       <button id="tweet" class="btn gold">𝕏 Post it</button>
-      <button id="another" class="btn">🔁 Play another drive</button>
+      <button id="another" class="btn">${surv ? "🔥 Next drive (survivor)" : "🔁 Play another drive"}</button>
     </div>
     <p class="hint">Compare with the real drive below — every real call, in order.</p>
   </section>
@@ -451,8 +479,18 @@ function renderEnd(puzzle, game) {
     const p2 = PUZZLES[Math.floor(Math.random() * PUZZLES.length)];
     const g2 = new Game(p2, BASELINES);
     document.title = `${p2.game.away} @ ${p2.game.home} — Final Drive`;
-    renderGame(p2, g2);
+    const keepRun = surv && game.won;
+    renderGame(p2, g2, keepRun, keepRun ? (game._survivorRun ?? 0) + 1 : 0);
   };
+  if (surv) {
+    const runLen = game._survivorRun ?? 0;
+    const cap = $("#end .end h1");
+    if (game.won) cap.textContent = `🏆 Survived ${runLen + 1}`;
+    else {
+      cap.textContent = `💀 Run over — ${runLen} straight win${runLen === 1 ? "" : "s"}`;
+      $("#another").textContent = "🔁 Start a new run";
+    }
+  }
 }
 
 
